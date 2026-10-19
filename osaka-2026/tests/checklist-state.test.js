@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict');
+const {migrate,defaults}=require('../src/scripts/checklist-state.js');
+const old={id:'booking-10',title:'old title',note:'old note',due:'soon',group:'booking',done:true};
+const fresh={...old,title:'18:30 dinner',note:'arrive 18:00',done:false};
+const seed={tasks:[fresh],previousDefaults:{'booking-10':{title:old.title,note:old.note}}};
+const migrated=migrate([old],{},seed);
+assert.equal(migrated.tasks[0].done,true);
+assert.equal(migrated.tasks[0].title,fresh.title);
+assert.equal(migrated.tasks[0].note,fresh.note);
+const edited={...old,note:'my reservation number is stored privately'};
+assert.equal(migrate([edited],{},seed).tasks[0].note,edited.note);
+const custom={...old,id:'custom-1',title:'my task'};
+assert.deepEqual(migrate([custom],{},seed).tasks[0],custom);
+assert.equal(migrate([fresh],{defaults:defaults(seed)},seed).changed,0);
+const changed={tasks:[{...fresh,note:'next revision'}]};
+assert.equal(migrate([fresh],{defaults:defaults(seed)},changed).tasks[0].note,'next revision');
+console.log('PASS: legacy/new defaults migrate; completed states, custom notes and tasks survive; repeated migration is stable.');

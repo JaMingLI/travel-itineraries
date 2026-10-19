@@ -1,0 +1,1 @@
+(()=>{let before=[];window.addEventListener('beforeprint',()=>{before=Array.from(document.querySelectorAll('#days details')).map(el=>[el,el.open]);before.forEach(([el])=>el.open=true)});window.addEventListener('afterprint',()=>before.forEach(([el,open])=>el.open=open))})();

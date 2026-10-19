@@ -1,0 +1,1213 @@
+{
+  "schema": 1,
+  "source": "src/days/day-01.html … day-08.html",
+  "exchangeRate": "0.22",
+  "days": [
+    {
+      "day": 1,
+      "date": "11/14（六）",
+      "title": "抵達大阪，慢慢進入旅行",
+      "summary": "難波・道頓堀・法善寺橫丁",
+      "budget": {
+        "交通": 2900,
+        "餐飲": 3800,
+        "門票": 0,
+        "total": 6700
+      },
+      "steps": [
+        {
+          "start": "13:20",
+          "end": "15:20",
+          "title": "KIX下機、入境、領行李與海關",
+          "kind": "準備／手續"
+        },
+        {
+          "start": "15:20",
+          "end": "15:45",
+          "title": "步行｜關西機場航廈 → 關西機場站（南海電鐵）",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "15:45",
+          "end": "16:40",
+          "title": "南海電鐵｜關西機場站 → 天下茶屋站",
+          "kind": "交通・私鐵"
+        },
+        {
+          "start": "16:40",
+          "end": "17:00",
+          "title": "步行｜天下茶屋站 → 住宿",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "17:00",
+          "end": "17:30",
+          "title": "辦理入住與放行李",
+          "kind": "準備／手續"
+        },
+        {
+          "start": "17:30",
+          "end": "18:10",
+          "title": "地鐵｜花園町站 → 難波站 → 晚餐區",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "18:10",
+          "end": "19:25",
+          "title": "晚餐：難波・道頓堀自由分食",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "19:25",
+          "end": "20:20",
+          "title": "道頓堀河岸、法善寺散步與拍照",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "20:20",
+          "end": "21:00",
+          "title": "地鐵｜難波站 → 花園町站 → 住宿",
+          "kind": "交通・地鐵"
+        }
+      ],
+      "meals": [
+        {
+          "start": "18:10",
+          "end": "19:25",
+          "title": "晚餐：難波・道頓堀自由分食",
+          "kind": "用餐／休息",
+          "label": "晚餐・自由分食",
+          "budget": 3800
+        }
+      ],
+      "routes": [
+        {
+          "label": "開啟當日 Google Maps 路線 ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka&destination=Hozenji%20Yokocho%20Osaka&waypoints=Dotonbori%20Glico%20Sign%20Osaka&travelmode=transit"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "道頓堀・Glico Sign",
+          "url": "https://www.google.com/maps/search/?api=1&query=Dotonbori%20Glico%20Sign%20Osaka"
+        },
+        {
+          "name": "法善寺橫丁",
+          "url": "https://www.google.com/maps/search/?api=1&query=Hozenji%20Yokocho%20Osaka"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "11/15（日）",
+      "title": "大阪城與北濱的河畔午後",
+      "summary": "大阪城 → 北濱 → 中之島",
+      "budget": {
+        "交通": 1400,
+        "餐飲": 9700,
+        "門票": 2400,
+        "total": 13500
+      },
+      "steps": [
+        {
+          "start": "08:00",
+          "end": "08:55",
+          "title": "起床、飲水與出門準備（需要時補輕食）",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "08:55",
+          "end": "10:10",
+          "title": "地鐵｜花園町站 → 本町站轉乘 → 谷町四丁目站 → 大阪城",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "10:10",
+          "end": "12:35",
+          "title": "大阪城天守閣＋附近公園拍照",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "12:35",
+          "end": "13:25",
+          "title": "天守閣 → 大手門 → 天滿橋 → 北濱午餐區（步行）",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "13:25",
+          "end": "14:40",
+          "title": "午餐：北濱隨選",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "14:40",
+          "end": "15:35",
+          "title": "北濱／中之島河畔散步",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "15:35",
+          "end": "16:50",
+          "title": "河景咖啡、小點心與休息",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "16:50",
+          "end": "17:30",
+          "title": "地鐵｜北濱站 → 天神橋筋六丁目站 → 春駒",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "17:30",
+          "end": "18:15",
+          "title": "春駒本店現場候位",
+          "kind": "候位／銜接"
+        },
+        {
+          "start": "18:15",
+          "end": "19:30",
+          "title": "晚餐：春駒本店・握壽司分食",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "19:30",
+          "end": "20:35",
+          "title": "地鐵｜天神橋筋六丁目站 → 天下茶屋站 → 住宿",
+          "kind": "交通・地鐵"
+        }
+      ],
+      "meals": [
+        {
+          "start": "13:25",
+          "end": "14:40",
+          "title": "午餐：北濱隨選",
+          "kind": "用餐／休息",
+          "label": "午餐・隨選",
+          "budget": 2500
+        },
+        {
+          "start": "15:35",
+          "end": "16:50",
+          "title": "河景咖啡、小點心與休息",
+          "kind": "用餐／休息",
+          "label": "點心・咖啡／輕食",
+          "budget": 1200
+        },
+        {
+          "start": "18:15",
+          "end": "19:30",
+          "title": "晚餐：春駒本店・握壽司分食",
+          "kind": "用餐／休息",
+          "label": "晚餐・春駒壽司 本店",
+          "budget": 6000
+        }
+      ],
+      "routes": [
+        {
+          "label": "開啟今日去程 Google Maps（依上方建議路線核對） ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E8%8A%B1%E5%9C%92%E7%94%BA%E9%A7%85&destination=%E5%A4%A7%E9%98%AA%E5%9F%8E+%E5%A4%A7%E6%89%8B%E9%96%80&travelmode=transit"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "大阪城",
+          "url": "https://www.google.com/maps/search/?api=1&query=Osaka%20Castle"
+        },
+        {
+          "name": "中之島・北濱",
+          "url": "https://www.google.com/maps/search/?api=1&query=Nakanoshima%20Park%20Osaka"
+        },
+        {
+          "name": "春駒壽司 本店",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E9%A7%92+%E6%9C%AC%E5%BA%97+%E5%A4%A7%E9%98%AA+%E5%A4%A9%E7%A5%9E%E6%A9%8B5-5-2"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "11/16（一）",
+      "title": "穿著和服，走進京都老街",
+      "summary": "清水東山 → 清水寺 → 二寧坂・八坂塔",
+      "budget": {
+        "交通": 3800,
+        "餐飲": 10200,
+        "門票": 1000,
+        "total": 15000
+      },
+      "steps": [
+        {
+          "start": "06:00",
+          "end": "06:40",
+          "title": "起床、飲水與出門準備（需要時補輕食）",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "06:40",
+          "end": "06:45",
+          "title": "出門前最後確認",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "06:45",
+          "end": "09:45",
+          "title": "地鐵＋阪急｜花園町站 → 西梅田站／大阪梅田站 → 京都河原町站",
+          "kind": "交通・地鐵＋私鐵"
+        },
+        {
+          "start": "09:45",
+          "end": "10:00",
+          "title": "09:45到店附近，等待10:00建議預約",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "10:00",
+          "end": "11:30",
+          "title": "岡本著裝與髮型",
+          "kind": "準備／手續"
+        },
+        {
+          "start": "11:30",
+          "end": "11:45",
+          "title": "步行｜和服店 → 同區午餐店",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "11:45",
+          "end": "13:00",
+          "title": "午餐：清水寺周邊隨選",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "13:00",
+          "end": "13:20",
+          "title": "步行｜午餐區 → 清水寺入口",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "13:20",
+          "end": "14:35",
+          "title": "清水寺參觀與拍照",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "14:35",
+          "end": "14:50",
+          "title": "步行｜清水寺 → 產寧坂／二寧坂",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "14:50",
+          "end": "15:35",
+          "title": "產寧坂、二寧坂、八坂塔外觀",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "15:35",
+          "end": "16:05",
+          "title": "沿途點心：抹茶甜點／糰子",
+          "kind": "點心／休息"
+        },
+        {
+          "start": "16:05",
+          "end": "16:25",
+          "title": "步行｜八坂塔周邊 → 岡本清水東山店",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "16:25",
+          "end": "16:55",
+          "title": "還衣、換回便服、取物",
+          "kind": "準備／手續"
+        },
+        {
+          "start": "16:55",
+          "end": "17:40",
+          "title": "步行｜還衣後 → 寺町佛光寺・麵屋豬一本店",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "17:40",
+          "end": "18:40",
+          "title": "豬一本店・領整理券與現場候位",
+          "kind": "候位／銜接"
+        },
+        {
+          "start": "18:40",
+          "end": "19:25",
+          "title": "晚餐：麵屋豬一・京都出汁拉麵",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "19:25",
+          "end": "19:45",
+          "title": "步行｜麵屋豬一 → 阪急京都線京都河原町站",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "19:45",
+          "end": "22:15",
+          "title": "阪急＋地鐵｜京都河原町站 → 大阪梅田站／西梅田站 → 花園町站",
+          "kind": "交通・地鐵＋私鐵"
+        }
+      ],
+      "meals": [
+        {
+          "start": "11:45",
+          "end": "13:00",
+          "title": "午餐：清水寺周邊隨選",
+          "kind": "用餐／休息",
+          "label": "午餐・隨選",
+          "budget": 2500
+        },
+        {
+          "start": "15:35",
+          "end": "16:05",
+          "title": "沿途點心：抹茶甜點／糰子",
+          "kind": "點心／休息",
+          "label": "點心・咖啡／輕食",
+          "budget": 1700
+        },
+        {
+          "start": "18:40",
+          "end": "19:25",
+          "title": "晚餐：麵屋豬一・京都出汁拉麵",
+          "kind": "用餐／休息",
+          "label": "晚餐・麵屋豬一 本店（麺屋 猪一）",
+          "budget": 6000
+        }
+      ],
+      "routes": [
+        {
+          "label": "開啟今日去程 Google Maps（依上方建議路線核對） ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E8%8A%B1%E5%9C%92%E7%94%BA%E9%A7%85&destination=%E4%BA%AC%E9%83%BD%E6%B2%B3%E5%8E%9F%E7%94%BA%E9%A7%85&travelmode=transit"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "西梅田",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E6%A2%85%E7%94%B0%E9%A7%85"
+        },
+        {
+          "name": "京都河原町站",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kyoto-kawaramachi%20Station"
+        },
+        {
+          "name": "岡本和服 清水東山店",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E7%9D%80%E7%89%A9%E5%B2%A1%E6%9C%AC+%E6%B8%85%E6%B0%B4%E6%9D%B1%E5%B1%B1%E5%BA%97+%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E8%BE%B0%E5%B7%B3%E7%94%BA110-9"
+        },
+        {
+          "name": "清水寺",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kiyomizu-dera%20Kyoto"
+        },
+        {
+          "name": "二寧坂・產寧坂",
+          "url": "https://www.google.com/maps/search/?api=1&query=Ninenzaka%20Kyoto"
+        },
+        {
+          "name": "八坂塔",
+          "url": "https://www.google.com/maps/search/?api=1&query=Yasaka%20Pagoda%20Kyoto"
+        },
+        {
+          "name": "麵屋豬一 本店（麺屋 猪一）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B1%8B+%E7%8C%AA%E4%B8%80+%E6%9C%AC%E5%BA%97+%E4%BA%AC%E9%83%BD+%E6%81%B5%E6%AF%94%E9%A0%88%E4%B9%8B%E7%94%BA542"
+        },
+        {
+          "name": "阪急大阪梅田駅",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E6%80%A5%E5%A4%A7%E9%98%AA%E6%A2%85%E7%94%B0%E9%A7%85"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "11/17（二）",
+      "title": "把一整天留給 USJ",
+      "summary": "Universal Studios Japan",
+      "budget": {
+        "交通": 1800,
+        "餐飲": 17200,
+        "門票": 19800,
+        "total": 38800
+      },
+      "steps": [
+        {
+          "start": "05:40",
+          "end": "06:20",
+          "title": "起床、飲水與出門準備（需要時補輕食）",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "06:20",
+          "end": "07:30",
+          "title": "JR｜新今宮站 → 西九條站轉乘 → 環球城站 → USJ",
+          "kind": "交通・JR"
+        },
+        {
+          "start": "07:30",
+          "end": "09:00",
+          "title": "入園前排隊／等候",
+          "kind": "等候／銜接"
+        },
+        {
+          "start": "09:00",
+          "end": "09:25",
+          "title": "入園、票券／整理券與確認指定時段",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "09:25",
+          "end": "11:15",
+          "title": "優先設施第一段",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "11:15",
+          "end": "12:15",
+          "title": "午餐：園內隨選",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "12:15",
+          "end": "14:15",
+          "title": "設施與拍照第二段",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "14:15",
+          "end": "15:05",
+          "title": "園內點心、飲水與休息",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "15:05",
+          "end": "15:50",
+          "title": "園區拍照／選擇性設施",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "15:50",
+          "end": "16:30",
+          "title": "步行｜園內移動 → 紐約區 SAIDO 彩道（2F）",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "16:30",
+          "end": "17:00",
+          "title": "彩道報到／優先案內與候位",
+          "kind": "候位／報到"
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "title": "晚餐：SAIDO 彩道・園內和食御膳",
+          "kind": "用餐"
+        },
+        {
+          "start": "18:00",
+          "end": "18:25",
+          "title": "步行｜彩道 → USJ出口 → JR環球城站（Universal City）",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "18:25",
+          "end": "19:25",
+          "title": "JR＋阪神｜環球城站 → 西九條站轉乘 → 大阪難波站 → Alcyon",
+          "kind": "交通・JR＋私鐵"
+        },
+        {
+          "start": "19:25",
+          "end": "19:45",
+          "title": "生日蛋糕取貨：Alcyon 法善寺本店",
+          "kind": "生日安排"
+        },
+        {
+          "start": "19:45",
+          "end": "20:30",
+          "title": "地鐵｜取蛋糕後 → 難波站 → 花園町站 → 住宿",
+          "kind": "交通・地鐵"
+        }
+      ],
+      "meals": [
+        {
+          "start": "11:15",
+          "end": "12:15",
+          "title": "午餐：園內隨選",
+          "kind": "用餐／休息",
+          "label": "午餐・隨選",
+          "budget": 4000
+        },
+        {
+          "start": "14:15",
+          "end": "15:05",
+          "title": "園內點心、飲水與休息",
+          "kind": "用餐／休息",
+          "label": "點心・咖啡／輕食",
+          "budget": 1200
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "title": "晚餐：SAIDO 彩道・園內和食御膳",
+          "kind": "用餐",
+          "label": "晚餐・USJ園內 SAIDO 彩道",
+          "budget": 8000
+        },
+        {
+          "start": "19:25",
+          "end": "19:45",
+          "title": "生日蛋糕取貨：Alcyon 法善寺本店",
+          "kind": "生日安排",
+          "label": "巧克力生日蛋糕・需事先預約",
+          "budget": 4000
+        }
+      ],
+      "routes": [
+        {
+          "label": "開啟今日去程 Google Maps（依上方建議路線核對） ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E6%96%B0%E4%BB%8A%E5%AE%AE%E9%A7%85&destination=Universal+City+Station&travelmode=transit"
+        },
+        {
+          "label": "開啟USJ → 難波蛋糕取貨路線 ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Universal+City+Station+Osaka&destination=%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%89%E3%83%BB%E3%83%86+%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%A7%E3%83%B3+%E6%B3%95%E5%96%84%E5%AF%BA%E6%9C%AC%E5%BA%97&waypoints=Nishikujo+Station%7COsaka-Namba+Station&travelmode=transit"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "Universal Studios Japan",
+          "url": "https://www.google.com/maps/search/?api=1&query=Universal%20Studios%20Japan"
+        },
+        {
+          "name": "USJ園內 SAIDO 彩道",
+          "url": "https://www.google.com/maps/search/?api=1&query=SAIDO+%E5%BD%A9%E9%81%93+USJ"
+        },
+        {
+          "name": "Alcyon 法善寺本店（難波）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%89%E3%83%BB%E3%83%86%20%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%A7%E3%83%B3%20%E6%B3%95%E5%96%84%E5%AF%BA%E6%9C%AC%E5%BA%97%20%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%9B%A3%E6%B3%A21-6-20"
+        },
+        {
+          "name": "Louie’s披薩（備案）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AB%E3%82%A4%E3%82%BA+N.Y.+%E3%83%94%E3%82%B6%E3%83%91%E3%83%BC%E3%83%A9%E3%83%BC+USJ"
+        },
+        {
+          "name": "JR新今宮駅",
+          "url": "https://www.google.com/maps/search/?api=1&query=JR%E6%96%B0%E4%BB%8A%E5%AE%AE%E9%A7%85"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "11/18（三）",
+      "title": "海遊館，接一場爐端燒晚餐",
+      "summary": "天保山 → 海遊館 → 梅田爐端燒",
+      "budget": {
+        "交通": 2000,
+        "餐飲": 13700,
+        "門票": 5600,
+        "total": 21300
+      },
+      "steps": [
+        {
+          "start": "09:00",
+          "end": "09:55",
+          "title": "起床、飲水與出門準備（需要時補輕食）",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "09:55",
+          "end": "11:10",
+          "title": "地鐵｜花園町站 → 本町站轉乘 → 大阪港站 → 天保山",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "11:10",
+          "end": "12:25",
+          "title": "午餐：天保山隨選簡餐",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "12:25",
+          "end": "12:50",
+          "title": "步行｜短暫休息、洗手間、走至入場處",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "12:50",
+          "end": "13:00",
+          "title": "等待建議13:00入場時段",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "13:00",
+          "end": "16:00",
+          "title": "海遊館參觀",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "16:00",
+          "end": "16:15",
+          "title": "海遊館出口休息、沿途小點心",
+          "kind": "點心／休息"
+        },
+        {
+          "start": "16:15",
+          "end": "16:30",
+          "title": "出口商店、取物與離場",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "16:30",
+          "end": "18:00",
+          "title": "地鐵｜大阪港站 → 谷町四丁目站轉乘 → 東梅田站 → Tottotto",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "18:00",
+          "end": "18:30",
+          "title": "18:00到店附近；18:15前報到，等待18:30建議訂位",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "18:30",
+          "end": "20:30",
+          "title": "晚餐：Tottotto お初天神店・炭火爐端燒",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "20:30",
+          "end": "21:25",
+          "title": "地鐵｜梅田站 → 大國町站轉乘 → 花園町站 → 住宿",
+          "kind": "交通・地鐵"
+        }
+      ],
+      "meals": [
+        {
+          "start": "11:10",
+          "end": "12:25",
+          "title": "午餐：天保山隨選簡餐",
+          "kind": "用餐／休息",
+          "label": "午餐・隨選",
+          "budget": 2500
+        },
+        {
+          "start": "16:00",
+          "end": "16:15",
+          "title": "海遊館出口休息、沿途小點心",
+          "kind": "點心／休息",
+          "label": "點心・咖啡／輕食",
+          "budget": 1200
+        },
+        {
+          "start": "18:30",
+          "end": "20:30",
+          "title": "晚餐：Tottotto お初天神店・炭火爐端燒",
+          "kind": "用餐／休息",
+          "label": "晚餐・とっとっと Tottotto 梅田お初天神店",
+          "budget": 10000
+        }
+      ],
+      "routes": [
+        {
+          "label": "去程｜花園町→大阪港（地鐵即時比較） ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E8%8A%B1%E5%9C%92%E7%94%BA%E9%A7%85&destination=%E5%A4%A7%E9%98%AA%E6%B8%AF%E9%A7%85&travelmode=transit"
+        },
+        {
+          "label": "晚餐段｜海遊館→Tottotto（東梅田下車） ↗",
+          "url": "https://www.google.com/maps/dir/%E6%B5%B7%E9%81%8A%E9%A4%A8+%E6%97%A5%E6%9C%AC%E3%80%92552-0022+Osaka,+Minato+Ward,+Kaigandori,+1+Chome%E2%88%921%E2%88%9210/%E7%88%90%E7%AB%AF%E3%80%81%E5%85%A7%E8%87%9F%E3%80%81%E7%83%A4%E4%B8%B2%E5%92%8C%E9%97%9C%E6%9D%B1%E7%85%AE+Tottotto+%E6%A2%85%E7%94%B0%E5%88%9D%E5%A4%A9%E7%A5%9E%E5%BA%97+%E6%97%A5%E6%9C%AC%E3%80%92530-0057+Osaka,+Kita+Ward,+Sonezaki,+2+Chome%E2%88%9213%E2%88%9217+Watanabe+Bld.,+2F/@34.6784079,135.3914677,12z/am=t/data=!3m1!5s0x6000e69236c52ebb:0x39814e65bdb55ab7!4m18!4m17!1m5!1m1!1s0x6000e8f48c0da9cd:0x6f83c520ae082ccc!2m2!1d135.4289645!2d34.6545182!1m5!1m1!1s0x6000e7a3dba068b1:0x8430264d190ac361!2m2!1d135.5002629!2d34.7012873!2m3!6e0!7e2!8j1795019400!3e3?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "大阪海遊館",
+          "url": "https://www.google.com/maps/search/?api=1&query=Osaka%20Aquarium%20Kaiyukan"
+        },
+        {
+          "name": "東梅田",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%A2%85%E7%94%B0%E9%A7%85"
+        },
+        {
+          "name": "とっとっと Tottotto 梅田お初天神店",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%81%A3%E3%81%A8%E3%81%A3%E3%81%A8+%E6%A2%85%E7%94%B0%E3%81%8A%E5%88%9D%E5%A4%A9%E7%A5%9E%E5%BA%97+%E6%9B%BD%E6%A0%B9%E5%B4%8E2-13-17"
+        },
+        {
+          "name": "谷町四丁目駅",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E8%B0%B7%E7%94%BA%E5%9B%9B%E4%B8%81%E7%9B%AE%E9%A7%85"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "11/19（四）",
+      "title": "梅田購物，A5 和牛收尾",
+      "summary": "大丸 → LUCUA → 阪急 → 一笑",
+      "budget": {
+        "交通": 1200,
+        "餐飲": 20200,
+        "門票": 0,
+        "total": 21400
+      },
+      "steps": [
+        {
+          "start": "08:00",
+          "end": "08:55",
+          "title": "起床、飲水與出門準備（需要時補輕食）",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "08:55",
+          "end": "09:00",
+          "title": "出門前準備",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "09:00",
+          "end": "09:55",
+          "title": "地鐵｜花園町站 → 西梅田站 → 大丸梅田",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "09:55",
+          "end": "10:00",
+          "title": "等大丸10:00開門",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50",
+          "title": "大丸梅田：指定樓層購物",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "11:50",
+          "end": "12:05",
+          "title": "步行｜大丸 → LUCUA一帶午餐區",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "12:05",
+          "end": "13:20",
+          "title": "午餐：梅田隨選丼飯／麵食",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "13:20",
+          "end": "14:35",
+          "title": "LUCUA／LUCUA1100重點購物",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "14:35",
+          "end": "15:10",
+          "title": "梅田點心：咖啡／甜點分食",
+          "kind": "點心／休息"
+        },
+        {
+          "start": "15:10",
+          "end": "15:30",
+          "title": "步行｜LUCUA → 阪急梅田本店",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "15:30",
+          "end": "17:20",
+          "title": "阪急梅田本店：重點樓層",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "17:20",
+          "end": "17:35",
+          "title": "結帳與購物單據整理",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "17:35",
+          "end": "18:05",
+          "title": "步行｜阪急 → DD HOUSE B1F 一笑梅田茶屋町店",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "18:05",
+          "end": "18:30",
+          "title": "18:05到店附近，最晚18:15報到，等待18:30建議訂位",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "18:30",
+          "end": "20:30",
+          "title": "晚餐：A5 和牛燒肉・一笑",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "20:30",
+          "end": "21:30",
+          "title": "地鐵｜梅田站 → 大國町站轉乘 → 花園町站 → 住宿",
+          "kind": "交通・地鐵"
+        }
+      ],
+      "meals": [
+        {
+          "start": "12:05",
+          "end": "13:20",
+          "title": "午餐：梅田隨選丼飯／麵食",
+          "kind": "用餐／休息",
+          "label": "午餐・隨選",
+          "budget": 2500
+        },
+        {
+          "start": "14:35",
+          "end": "15:10",
+          "title": "梅田點心：咖啡／甜點分食",
+          "kind": "點心／休息",
+          "label": "點心・咖啡／輕食",
+          "budget": 1700
+        },
+        {
+          "start": "18:30",
+          "end": "20:30",
+          "title": "晚餐：A5 和牛燒肉・一笑",
+          "kind": "用餐／休息",
+          "label": "晚餐・板前焼肉 一笑 梅田茶屋町店",
+          "budget": 16000
+        }
+      ],
+      "routes": [
+        {
+          "label": "晚餐後｜一笑→住宿（梅田／大國町／花園町） ↗",
+          "url": "https://www.google.com/maps/dir/%E6%9D%BF%E5%89%8D%E7%87%92%E8%82%89+%E4%B8%80%E7%AC%91+%E6%A2%85%E7%94%B0%E8%8C%B6%E5%B1%8B%E7%94%BA%E5%BA%97+%E6%97%A5%E6%9C%AC%E3%80%92530-0012+Osaka,+Kita+Ward,+Shibata,+1+Chome%E2%88%928%E2%88%921+DDHOUSE+B1F/1-ch%C5%8Dme-10-4+Hanazonominami,+Nishinari+Ward,+Osaka,+556-0015%E6%97%A5%E6%9C%AC/@34.6751674,135.4413972,13z/am=t/data=!3m1!5s0x6000e69236c52ebb:0x39814e65bdb55ab7!4m18!4m17!1m5!1m1!1s0x6000e7f8c54cfe01:0x26a0d2113d984980!2m2!1d135.4971689!2d34.7068525!1m5!1m1!1s0x6000dd8f44bec47d:0x52a7cb2b7be4ad2c!2m2!1d135.4976434!2d34.6416401!2m3!6e0!7e2!8j1795120200!3e3?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "大丸梅田",
+          "url": "https://www.google.com/maps/search/?api=1&query=Daimaru%20Umeda"
+        },
+        {
+          "name": "LUCUA Osaka",
+          "url": "https://www.google.com/maps/search/?api=1&query=LUCUA%20Osaka"
+        },
+        {
+          "name": "阪急梅田本店",
+          "url": "https://www.google.com/maps/search/?api=1&query=Hankyu%20Umeda%20Main%20Store"
+        },
+        {
+          "name": "板前焼肉 一笑 梅田茶屋町店",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%BF%E5%89%8D%E7%84%BC%E8%82%89%20%E4%B8%80%E7%AC%91%20%E6%A2%85%E7%94%B0%E8%8C%B6%E5%B1%8B%E7%94%BA%E5%BA%97%20DD%20HOUSE"
+        },
+        {
+          "name": "御堂筋線梅田駅",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E5%A0%82%E7%AD%8B%E7%B7%9A%E6%A2%85%E7%94%B0%E9%A7%85"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "11/20（五）",
+      "title": "黑門吃早午餐，心齋橋慢逛",
+      "summary": "黑門 → 心齋橋 → 玄品河豚",
+      "budget": {
+        "交通": 1400,
+        "餐飲": 18200,
+        "門票": 0,
+        "total": 19600
+      },
+      "steps": [
+        {
+          "start": "08:45",
+          "end": "09:40",
+          "title": "起床、飲水與出門準備（需要時補輕食）",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "09:40",
+          "end": "10:25",
+          "title": "地鐵｜天下茶屋站 → 日本橋站 → 黑門市場",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "10:25",
+          "end": "12:15",
+          "title": "午餐：黑門市場散步與分食",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "12:15",
+          "end": "12:45",
+          "title": "黑門 → 道頓堀 → 戎橋 → 心齋橋筋（步行）",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "12:45",
+          "end": "14:35",
+          "title": "心齋橋第一段購物",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "14:35",
+          "end": "15:30",
+          "title": "咖啡、洗手間與休息",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "15:30",
+          "end": "16:30",
+          "title": "心齋橋最後一段購物與結帳",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "16:30",
+          "end": "17:10",
+          "title": "步行｜心齋橋 → 法善寺・玄品總本店",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "17:10",
+          "end": "17:45",
+          "title": "法善寺周邊休息／確認晚餐店門口",
+          "kind": "遊覽／休息"
+        },
+        {
+          "start": "17:45",
+          "end": "18:00",
+          "title": "玄品法善寺總本店報到・等待建議18:00用餐",
+          "kind": "報到／固定銜接"
+        },
+        {
+          "start": "18:00",
+          "end": "20:00",
+          "title": "晚餐：玄品法善寺總本店・河豚三吃",
+          "kind": "用餐"
+        },
+        {
+          "start": "20:00",
+          "end": "20:50",
+          "title": "地鐵｜玄品 → 難波站 → 花園町站 → 住宿",
+          "kind": "交通・地鐵"
+        }
+      ],
+      "meals": [
+        {
+          "start": "10:25",
+          "end": "12:15",
+          "title": "午餐：黑門市場散步與分食",
+          "kind": "用餐／休息",
+          "label": "午餐・隨選",
+          "budget": 2500
+        },
+        {
+          "start": "14:35",
+          "end": "15:30",
+          "title": "咖啡、洗手間與休息",
+          "kind": "用餐／休息",
+          "label": "點心・咖啡／輕食",
+          "budget": 1700
+        },
+        {
+          "start": "18:00",
+          "end": "20:00",
+          "title": "晚餐：玄品法善寺總本店・河豚三吃",
+          "kind": "用餐",
+          "label": "晚餐・河豚三吃・玄品 法善寺總本店",
+          "budget": 14000
+        }
+      ],
+      "routes": [
+        {
+          "label": "心齋橋 → 玄品・晚餐步行導航 ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Shinsaibashi+Station+Osaka&destination=%E7%8E%84%E5%93%81+%E6%B3%95%E5%96%84%E5%AF%BA%E7%B7%8F%E6%9C%AC%E5%BA%97+%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%9B%A3%E6%B3%A21-1-13&travelmode=walking"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "黑門市場",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kuromon%20Ichiba%20Market"
+        },
+        {
+          "name": "心齋橋筋商店街",
+          "url": "https://www.google.com/maps/search/?api=1&query=Shinsaibashi-suji%20Shopping%20Street"
+        },
+        {
+          "name": "玄品 法善寺總本店",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E7%8E%84%E5%93%81+%E6%B3%95%E5%96%84%E5%AF%BA%E7%B7%8F%E6%9C%AC%E5%BA%97+%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%9B%A3%E6%B3%A21-1-13"
+        },
+        {
+          "name": "四つ橋線なんば駅",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E5%9B%9B%E3%81%A4%E6%A9%8B%E7%B7%9A%E3%81%AA%E3%82%93%E3%81%B0%E9%A7%85"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "11/21（六）",
+      "title": "隨吃收尾，帶著餘裕去機場",
+      "summary": "難波隨吃（寄放確認後）→ 天下茶屋 → KIX",
+      "budget": {
+        "交通": 2000,
+        "餐飲": 5000,
+        "門票": 0,
+        "total": 7000
+      },
+      "steps": [
+        {
+          "start": "08:00",
+          "end": "08:55",
+          "title": "起床、飲水與出門準備",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "08:55",
+          "end": "09:30",
+          "title": "整理行李、秤重與最後檢查",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "09:30",
+          "end": "10:00",
+          "title": "完成退房與寄放行李確認",
+          "kind": "候位／銜接"
+        },
+        {
+          "start": "10:00",
+          "end": "10:40",
+          "title": "地鐵｜花園町站 → 難波站 → 鬧區",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "10:40",
+          "end": "11:50",
+          "title": "難波鬧區隨逛隨吃",
+          "kind": "用餐／休息"
+        },
+        {
+          "start": "11:50",
+          "end": "12:30",
+          "title": "地鐵｜難波站 → 花園町站 → 住宿取行李",
+          "kind": "交通・地鐵"
+        },
+        {
+          "start": "12:30",
+          "end": "13:15",
+          "title": "領行李、洗手間與機場出發準備",
+          "kind": "候位／銜接"
+        },
+        {
+          "start": "13:15",
+          "end": "13:35",
+          "title": "步行｜住宿 → 天下茶屋站",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "13:35",
+          "end": "13:55",
+          "title": "南海電鐵天下茶屋站｜進站、確認關西機場方向及候車",
+          "kind": "私鐵・南海電鐵候車"
+        },
+        {
+          "start": "13:55",
+          "end": "14:50",
+          "title": "南海電鐵｜天下茶屋站 → 關西機場站",
+          "kind": "交通・私鐵"
+        },
+        {
+          "start": "14:50",
+          "end": "15:15",
+          "title": "步行｜南海電鐵關西機場站 → 出境航廈／櫃檯區",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "15:15",
+          "end": "17:15",
+          "title": "依現場順序辦理退稅海關確認、報到託運、安檢與出境",
+          "kind": "準備／手續"
+        },
+        {
+          "start": "17:15",
+          "end": "17:55",
+          "title": "機場簡餐／補水",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "17:55",
+          "end": "18:20",
+          "title": "步行｜走至登機門、洗手間及備妥登機文件",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "18:20",
+          "end": "19:00",
+          "title": "18:20起在登機門附近等候，依登機證實際登機時間登機；19:00表訂起飛，不是可到門口的時間",
+          "kind": "固定銜接"
+        }
+      ],
+      "meals": [
+        {
+          "start": "10:40",
+          "end": "11:50",
+          "title": "難波鬧區隨逛隨吃",
+          "kind": "用餐／休息",
+          "label": "午餐・自由分食",
+          "budget": 5000
+        },
+        {
+          "start": "17:15",
+          "end": "17:55",
+          "title": "機場簡餐／補水",
+          "kind": "遊覽／購物",
+          "label": "晚餐・機場彈性簡餐",
+          "budget": 5000
+        }
+      ],
+      "routes": [
+        {
+          "label": "開啟當日 Google Maps 路線 ↗",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka&destination=Kansai%20International%20Airport&waypoints=Tengachaya%20Station%20Osaka&travelmode=transit"
+        }
+      ],
+      "places": [
+        {
+          "name": "川HOUSE花園町",
+          "url": "https://www.google.com/maps/search/?api=1&query=1%20Chome-10-4%20Hanazonominami%2C%20Nishinari%20Ward%2C%20Osaka"
+        },
+        {
+          "name": "天下茶屋站",
+          "url": "https://www.google.com/maps/search/?api=1&query=Tengachaya%20Station%20Osaka"
+        },
+        {
+          "name": "關西國際機場 KIX",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kansai%20International%20Airport"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "交通": 16500,
+    "餐飲": 98000,
+    "門票": 28800,
+    "total": 143300
+  }
+}

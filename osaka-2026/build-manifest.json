@@ -1,0 +1,86 @@
+[
+  {
+    "path": "index.html",
+    "sha256": "dc5702c8a763d93d694c03dd33491bc28e5f60d3f7d6601ebcac9716cddc4a79"
+  },
+  {
+    "path": "assets/css/base.css",
+    "sha256": "ab4bd06362d6b1c717933e3ce6af65593bc8d9799bec0870b549b6f1132f134f"
+  },
+  {
+    "path": "assets/css/day-cards.css",
+    "sha256": "a2a11528343cb0e58dde3244d1d63ac7edb3f3128de430343eae4df63f45ae60"
+  },
+  {
+    "path": "assets/css/iphone-layout.css",
+    "sha256": "e2fdc148ca2eff3442c74d92b8371afb55c975c9989fe20af320e83da6e4d281"
+  },
+  {
+    "path": "assets/css/map-preview.css",
+    "sha256": "3a35a4395cd9912070c0270da15798850baed51b787a474066e1720bdfb709fd"
+  },
+  {
+    "path": "assets/css/street-map.css",
+    "sha256": "470183a2febeec719956179bdd8d2af9a654b57a7a30b1397de5cb1ac5bd8cc2"
+  },
+  {
+    "path": "assets/css/app-shell.css",
+    "sha256": "e7e99762322d3ae86e14e83f70742e3218b1a2ae20be9b32018bda896cdf644a"
+  },
+  {
+    "path": "assets/css/meal-cards.css",
+    "sha256": "7a625eec82a23a0b082ae8b8270878151c117e39480cf186c2b081330861eb85"
+  },
+  {
+    "path": "assets/css/meal-timeline.css",
+    "sha256": "8fa563b2fd7194af2c17f7b479c01050050fb7e53869edf24db6f08d2c2369d9"
+  },
+  {
+    "path": "assets/css/transit.css",
+    "sha256": "4998d531849f9bd65088cb19651736bacd34786fc06ac8a3b7c05786dcc80b4a"
+  },
+  {
+    "path": "assets/css/checklist.css",
+    "sha256": "53ba8b521e757c27dcda1f3ca2592065ccbcae68a45ca734aaab39436ba33c5e"
+  },
+  {
+    "path": "assets/css/iphone-forms.css",
+    "sha256": "00273ae4e26761395e201835d0a9f3ff845a2e0170d0bc807da69a887184d79f"
+  },
+  {
+    "path": "assets/css/route-audit.css",
+    "sha256": "3ff9ae13e1141b1306982a746e155c28b4d699ed3b5ab591749bdede6529cfed"
+  },
+  {
+    "path": "assets/css/agenda-notes.css",
+    "sha256": "4d7d2dd304c0ba17484bd78829f3558c7a39402d72e88a4ace85ec05eca250fd"
+  },
+  {
+    "path": "assets/js/disclosures.js",
+    "sha256": "79e76fca118c35f8b2f3ff768daec3a7807f75098890e5ecb4ad5f1f2b373e77"
+  },
+  {
+    "path": "assets/js/print.js",
+    "sha256": "a9179f6544734dcbbf99bc0ebfe27c35b9ccd02d5f29b6755675bf260095a1a1"
+  },
+  {
+    "path": "assets/js/map.js",
+    "sha256": "793ea1652458ea77c6c0a0ec4fc275fd7f7228342f636fbef360ff861ee74d9a"
+  },
+  {
+    "path": "assets/js/router.js",
+    "sha256": "0ebd211fb967231cf50ca058781661e095c5dc416b31b4ebdbd9c4f2b2a116ed"
+  },
+  {
+    "path": "assets/js/checklist-state.js",
+    "sha256": "13aa21c0332c4c576334fc28e425cafac8dce6b869a37f6ba4bdbf8c45c36b78"
+  },
+  {
+    "path": "assets/js/checklist.js",
+    "sha256": "550e46f459fd01fea57a25debbdc23061f3d4008c976acb928f419de488e55be"
+  },
+  {
+    "path": "assets/data/itinerary.json",
+    "sha256": "c5ef41a275dc6649768a5b1e16cc8a5694b7d3fe28f040f6c2e1c8f99e13a072"
+  }
+]

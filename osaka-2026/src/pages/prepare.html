@@ -1,0 +1,126 @@
+<div aria-labelledby="tab-prepare" class="view-panel" data-view="prepare" id="view-prepare" role="tabpanel" tabindex="-1"><div class="view-heading"><span class="view-kicker">BEFORE YOU GO</span><h1>出發準備</h1><p>把待確認事項集中管理：勾選完成、編輯內容與備註，也能新增自己的項目。所有事項保留，不提供刪除；下方保留操作指南供查閱。</p></div><section aria-labelledby="prep-title" class="prep-hub" id="final-todo"><div class="prep-top"><div><span class="view-kicker">YOUR TRAVEL CHECKLIST</span><span id="reservation-status"></span><h2 id="prep-title">出發前，逐項確認</h2></div><button id="prep-add" type="button">＋ 新增事項</button></div><p class="prep-caption" id="checklist">eSIM設定已獨立成9個步驟，兩支手機依序確認。其他待辦依主題分類；既有勾選與編輯紀錄會保留，所有事項均不可刪除。</p><p class="prep-caption">eSIM操作參考：<a href="https://support.apple.com/zh-tw/118227" rel="noopener" target="_blank">Apple旅遊eSIM說明</a> · <a href="https://support.apple.com/zh-tw/109317" rel="noopener" target="_blank">雙SIM卡設定</a> · 實際選單依iOS版本、手機與業者方案調整。</p><div class="prep-progress-row"><strong id="prep-progress-label">載入清單中…</strong><span aria-live="polite" id="prep-save-status" role="status"></span></div><progress aria-label="準備事項完成進度" id="prep-progress" max="1" value="0"></progress><div class="prep-controls"><label>顯示狀態<select id="prep-filter"><option value="all">全部事項</option><option value="pending">尚未完成</option><option value="done">已完成</option></select></label><label>主題<select id="prep-group-filter"><option value="all">全部主題</option></select></label><label class="prep-search">搜尋<input id="prep-search" placeholder="店名、備註或期限" type="search"/></label></div><div id="prep-list"></div><p hidden="" id="prep-empty">沒有符合條件的事項，可以調整篩選或新增事項。</p><details class="prep-storage"><summary>儲存方式與備份</summary><p>勾選、編輯與新增會自動儲存在這台裝置的目前瀏覽器。重新整理或關閉後再開可繼續；清除網站資料、私密瀏覽結束或更換網址／瀏覽器，紀錄可能不保留。本地預覽與GitHub Pages各自儲存，不會自動同步，也不會隨網站更新上傳到GitHub。</p><p>備註只記確認結果與私人資料位置，請勿填護照號碼、門鎖密碼或完整付款資料。勾選不會代你完成訂位、購票或入境申報，也不會自動修改每日行程及費用。</p><div class="prep-backups"><button id="prep-export" type="button">匯出備份 JSON</button><button id="prep-import" type="button">匯入備份 JSON</button><input accept=".json,application/json" hidden="" id="prep-import-file" type="file"/></div><p>匯入會先檢查格式，再確認是否合併。相同事項更新內容與勾選狀態，新事項加入清單；現有事項會保留，不提供刪除功能。匯入前建議先匯出現有資料。</p></details><noscript><p>這份可編輯清單需要JavaScript。請用Safari開啟網頁版；下方操作指南仍可閱讀。</p></noscript></section><p class="prep-caption">操作參考：以下保留設定步驟與情境說明；完成狀態及實際確認結果統一記在上方清單。</p><details class="guide-topic"><summary>操作參考｜手機上網與 eSIM 設定</summary><section id="internet">
+<div class="card">
+<h2>📱 手機上網與 eSIM 設定</h2>
+<p>手機型號、方案與完成情況請在上方可編輯清單記錄。以下為通用操作參考，實際設定以手機與購買方案的說明為準。</p>
+<h3>購買前</h3>
+<ul>
+<li>逐一確認兩人的手機型號、銷售地區版本是否支援 eSIM，以及有無電信業者鎖定；不支援時改用實體 SIM 或原門號漫遊。</li>
+<li>選擇覆蓋 11/14–11/21 全程的方案，確認「8 天」如何計算、效期從安裝／啟用／首次連網何時起算；不要未讀說明就提早開通。</li>
+<li>比較總流量、每日上限、降速條件、熱點分享限制、支援網路及客服方式。純數據方案通常沒有可接打電話的日本門號，訂位前先確認需求。</li>
+<li>建議兩人各有可獨立使用的網路，避免分開購物或一人手機沒電時完全失聯。方案尚未選購，費用待列入完整旅費。</li>
+</ul>
+<h3>出發前，在穩定 Wi-Fi 下準備</h3>
+<ol>
+<li>依方案指示決定是否預先安裝；將線路命名為「日本上網」和「台灣門號」。</li>
+<li>保存安裝說明、APN（若需要）、訂單及客服資料；QR Code 可備存在另一台裝置，避免同一支手機無法直接掃描。安裝碼不要公開分享。</li>
+<li>確認台灣門號是否需保留以收驗證簡訊，並查原電信業者的漫遊資格與通話、簡訊費率。</li>
+<li>下載 USJ 官方 App、Google Maps、翻譯工具；保存住宿地址、當日路線與訂單，下載需要的離線翻譯語言。</li>
+</ol>
+<h3>抵達日本後</h3>
+<ol>
+<li>開啟日本 eSIM，將「行動數據」指定給日本線路。</li>
+<li>日本線路是否開啟「數據漫遊」依供應商指示；台灣線路關閉數據漫遊，並檢查／關閉自動切換行動數據功能。</li>
+<li>測試開啟網頁、Google Maps 和雙方通訊軟體；需要分享網路時也先測試熱點。</li>
+<li>無法連線：先確認數據線路、方案是否生效、漫遊與 APN，再切換飛航模式或重開機。不要急著刪除 eSIM，部分方案無法重新安裝；透過機場／住宿 Wi-Fi 聯絡客服。</li>
+</ol>
+<p class="muted">回台後把行動數據切回台灣門號，確認帳單與日本方案到期／續訂設定。參考：<a href="https://support.apple.com/zh-tw/118227" rel="noopener" target="_blank">Apple 旅遊 eSIM 說明</a>。Android 選單依品牌與版本不同。</p>
+</div>
+</section></details><details class="guide-topic"><summary>操作參考｜護照、入境與住宿入住</summary><section id="entry">
+<div class="card">
+<h2>🛂 證件、入境與住宿入住</h2>
+<div class="grid grid-2">
+<div>
+<h3>證件與 Visit Japan Web</h3>
+<ul>
+<li>核對兩人護照有效期、英文姓名與機票一致；依各自護照與身分確認日本入境資格，不從出發地推定國籍。</li>
+<li>出發前完成 Visit Japan Web 的旅客資料、11/14 入境行程、CI152 航班及住宿資料，再依頁面填寫入境審查與海關申報。</li>
+<li>確認兩人資料與對應 QR Code 均可開啟，熟悉官方離線使用方式；入境時依現場指引出示。</li>
+<li>護照正本、回程訂位、住宿確認單隨身攜帶；電子備份與正本分開保存。Visit Japan Web 不取代護照或簽證資格。</li>
+</ul>
+<p><a href="https://services.digital.go.jp/en/visit-japan-web/guide/" rel="noopener" target="_blank">Visit Japan Web 官方操作指南</a> · <a href="https://www.mofa.go.jp/j_info/visit/visa/" rel="noopener" target="_blank">日本外務省簽證資訊（查詢入口）</a></p>
+</div>
+<div>
+<h3>川House 入住資料核對說明</h3>
+<ul>
+<li>訂單上的正式名稱、完整日文地址、郵遞區號與電話。</li>
+<li>入住／退房時間、櫃檯服務時段；自助入住連結、門鎖／取鑰匙方式。</li>
+<li>11/14 提早到達與 11/21 退房後能否寄放行李、收費與領取截止時間。</li>
+<li>延遲入住聯絡方式、住宿 Wi-Fi、清潔／換毛巾及垃圾處理方式。</li>
+</ul>
+<p class="note warnbox">原報告地圖已有住宿定位與地址，但尚未以正式訂單核對；導航與 Visit Japan Web 應填寫訂單確認的地址。截圖服務列表不代表接送機或寄放服務已包含。</p>
+</div>
+</div>
+</div>
+</section></details><details class="guide-topic"><summary>操作參考｜機場銜接與行李</summary><section id="airport-plan">
+<div class="card">
+<h2>✈️ 機場銜接與行李</h2>
+<p class="note">以下時間與每日20%緩衝時間軸同步，為這份行程的緩衝建議，不是航空公司櫃檯開放時間或最後報到期限。航廈、報到截止及行李額度仍須查看電子機票與華航通知。</p>
+<div class="grid grid-2">
+<div><h3>11/14 去程｜CI152 09:45 起飛</h3>
+<ul><li>建議約 <strong>06:45 抵達桃園機場</strong>；住處出門時間需再依前往機場的交通方式倒推。</li>
+<li>13:20 抵達 KIX 後依序辦理入境、領行李、海關及上網測試，再前往南海車站。</li>
+<li>從南海電鐵關西機場站搭空港急行往難波，在天下茶屋站下車；空港急行是車種名稱，請找南海閘口。</li>
+<li>不預訂抵達當天下午的不可退活動；若班機或入境延誤，晚餐縮為住宿周邊簡餐。</li></ul>
+</div>
+<div><h3>11/21 回程｜CI173 19:00 起飛</h3>
+<ul><li>以 <strong>15:15 前抵達 KIX 出境航廈</strong>為規劃目標，若購物退稅量多則再提早。</li>
+<li>暫以 <strong>13:15 領行李並離開住宿</strong>作緩衝規劃；前一晚查南海班次、航廈與轉移時間後調整，不視為已查證時刻表。</li>
+<li>行李無法寄放時，優先退房後帶往機場；不要假設車站一定有可用的大型置物櫃。</li>
+<li>到機場先確認退稅商品查驗與託運的先後順序，完成必要查驗再依現場指示交運行李。</li></ul>
+</div>
+</div>
+<h3>行李打包</h3>
+<ul><li>依票種確認每人託運件數／重量、手提尺寸／重量；購物後於 11/20 晚間先秤重。</li>
+<li>行動電源與備用鋰電池不放託運行李；容量、件數及機上使用限制依華航最新規範。藥品、證件、貴重物與充電線放隨身包。</li>
+<li>攜帶舒適步行鞋、分層衣物、輕便雨具、備用襪、充電器與行動電源；出發前一週再依大阪／京都預報調整衣物。</li>
+<li>查看充電器支援電壓與插腳，按需要準備轉接頭；不假設所有台灣電器都可直接使用。</li></ul>
+<p class="muted">官方：<a href="https://www.china-airlines.com/tw/zh/prepare-for-the-fly/information/check-in/service" rel="noopener" target="_blank">華航機場報到服務</a> · <a href="https://www.china-airlines.com/us/zh/prepare-for-the-fly/information/baggage/dangerous-goods?tab=LithiumBatteries" rel="noopener" target="_blank">華航危險品及電池規範</a></p>
+</div>
+</section></details><details class="guide-topic"><summary>操作參考｜USJ 當天操作清單</summary><section id="usj-guide">
+<div class="card">
+<h2>🎢 USJ 當天操作清單</h2>
+<ol>
+<li><strong>出發前：</strong>兩人各選最想玩的設施，合併排出前三名；是否購買 Express Pass 依目標設施與預算決定，尚未代選。先查營業時間及設施停運公告。</li>
+<li><strong>票券：</strong>Studio Pass 是入園門票；Express Pass 是指定設施的快速通關商品，購買時需核對內容與時段，不視為取代入園門票。</li>
+<li><strong>App：</strong>安裝最新官方 App，預先登錄同行兩人的入園票券。主用手機保持連線，另一支保存票券備份並帶足電量。</li>
+<li><strong>入園後：</strong>依當日規定查看目標園區的入場整理券／抽籤券。部分園區可能需要指定入場資格，可由部分套票事先取得，或入園後透過官方 App 申請；數量有限，不保證可取得。</li>
+<li><strong>園內：</strong>按已取得的指定時段安排行程；園區入場資格不等於所有設施免排隊。保留用餐、休息與移動時間，不把前三名之外的項目排成硬性任務。</li>
+<li><strong>回程：</strong>離園前查看返回住宿的轉乘與末班車；原則不搭計程車，疲累時提早離園。</li>
+</ol>
+<p class="muted">官方：<a href="https://www.usj.co.jp/web/en/us/enjoy/numbered-ticket" rel="noopener" target="_blank">USJ 電子整理券與園區入場說明</a>。適用園區、發券狀況與快速通關內容依到訪日公告。</p>
+</div>
+</section></details><details class="guide-topic"><summary>操作參考｜雨天、疲累與交通備案</summary><section id="backup">
+<div class="card">
+<h2>☔ 雨天、疲累與交通備案</h2>
+<div style="overflow:auto"><table class="phone-table"><thead><tr><th>情況</th><th>處理方式</th></tr></thead><tbody>
+<tr><td data-label="情況"><span class="phone-cell-value">京都和服日下雨</span></td><td data-label="處理方式"><span class="phone-cell-value">前 2–3 天看預報，先問店家改期／取消與雨具規則。小雨縮短老街拍照、增加室內用餐休息；大雨優先安全。未確認所有訂單可變更前，不直接互換日期。</span></td></tr>
+<tr><td data-label="情況"><span class="phone-cell-value">大阪城／北濱遇雨</span></td><td data-label="處理方式"><span class="phone-cell-value">縮短公園與河畔步行，改以天守閣（依開放狀況）、咖啡與室內商場為主。</span></td></tr>
+<tr><td data-label="情況"><span class="phone-cell-value">海遊館日下雨</span></td><td data-label="處理方式"><span class="phone-cell-value">保留室內海遊館與晚餐，減少天保山戶外散步。</span></td></tr>
+<tr><td data-label="情況"><span class="phone-cell-value">USJ 遇雨或設施停運</span></td><td data-label="處理方式"><span class="phone-cell-value">依官方 App 調整至可開放項目與表演，不預設門票可以因下雨退款；攜帶雨衣及備用襪。</span></td></tr>
+<tr><td data-label="情況"><span class="phone-cell-value">走累、餐廳久候</span></td><td data-label="處理方式"><span class="phone-cell-value">每天可刪去最後一個非預約景點；餐廳候位超過兩人可接受時間就改附近簡餐，不跨區追店。</span></td></tr>
+<tr><td data-label="情況"><span class="phone-cell-value">列車停駛或延誤</span></td><td data-label="處理方式"><span class="phone-cell-value">先看站方公告與替代鐵道路線；回程日取消補貨、提早去機場。涉及航班風險時立即聯絡航空公司，不等到最後一班可行列車。</span></td></tr>
+</tbody></table></div>
+<p>離線資料只能備查，不能提供即時轉乘；每天出門前用連線導航確認班次。11/16 京都早出門，早餐與飲水前一晚先準備。</p>
+</div>
+</section></details><details class="guide-topic"><summary>操作參考｜保險、藥品與緊急資料</summary><section id="health">
+<div class="card">
+<h2>🩹 保險、藥品與緊急資料</h2>
+<ul>
+<li>投保狀態待確認；檢查兩人的海外醫療、旅遊不便、班機延誤及行李保障範圍、除外事項與理賠文件需求。</li>
+<li>手機離線存保單號碼、24 小時救援聯絡方式、緊急聯絡人及住宿地址；兩人互相知道資料位置。</li>
+<li>攜帶足量常用藥、過敏與用藥清單，保留原包裝或處方資料；特殊藥品需另查日本攜入規定，不直接假設可帶入。</li>
+<li>日本緊急電話：<strong>110 警察；119 消防／救護</strong>。純數據 eSIM 不能當作一般電話服務，必要時請現場人員協助撥打並清楚提供位置。</li>
+</ul>
+<p class="muted">官方：<a href="https://www.japan.travel/en/plan/emergencies/" rel="noopener" target="_blank">日本觀光局緊急資訊</a> · <a href="https://www.japan.travel/en/plan/travel-insurance-in-japan/" rel="noopener" target="_blank">旅遊保險與就醫資訊</a></p>
+</div>
+</section></details><details class="guide-topic"><summary>操作參考｜準備指南與資料狀態</summary><section id="prepare">
+<div class="card">
+<h2>🧳 出發準備與當地實用指南</h2>
+<p class="sub">2026/10/17 補充｜「建議」為規劃安排；「待確認」代表尚未取得資料，並不表示已購買、預約或完成。</p>
+<div class="grid grid-3">
+<div class="note"><strong>已取得資料</strong><br/>CI152／CI173 航班時刻、住宿日期 11/14–11/21、7 晚雙人床房。</div>
+<div class="note"><strong>優先補齊</strong><br/>住宿完整地址與入住方式、兩人手機型號、行李額度、購票訂位狀態。</div>
+<div class="note warnbox"><strong>本次日期特別注意</strong><br/>購物退稅新制自 2026/11/1 起適用，回程需預留海關確認時間。</div>
+</div>
+</div>
+</section></details></div>

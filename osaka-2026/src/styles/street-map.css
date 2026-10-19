@@ -1,0 +1,88 @@
+/* Quiet street map — local review candidate */
+#route-map{--map-accent:#387c78;--map-ink:#243f43;--map-muted:#7a8e90}
+#route-map>.sub{max-width:650px;line-height:1.9}
+#route-map .real-map-shell{background:#f7f8f5;border:1px solid #dce3dd;box-shadow:0 20px 65px #0002;border-radius:24px}
+#route-map .real-map-head{padding:28px 28px 20px;background:#f7f8f5;border:0;color:var(--map-ink)}
+.map-eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;color:#718986}
+#route-map .real-map-head strong{display:block;font-size:24px;letter-spacing:.04em;margin-top:8px;font-weight:650}
+#route-map .real-map-head p{color:#7b8987;font-size:12px;letter-spacing:1px;margin-top:7px}
+#route-map .map-filter{margin-top:22px;gap:6px;flex-wrap:nowrap;overflow:auto;scrollbar-width:none;padding:2px 0 4px}
+#route-map .map-filter button{background:transparent;border:1px solid transparent;border-radius:12px;color:#6c807e!important;padding:10px 15px;min-height:44px;white-space:nowrap;box-shadow:none;font-size:14px;transition:background .25s,color .25s}
+#route-map .map-filter button small{font-size:9px;letter-spacing:1px;opacity:.7;margin-right:3px}
+#route-map .map-filter button.active{background:#32736e;color:#fff!important;border-color:#32736e;box-shadow:0 4px 12px #32736e22}
+#route-map .map-filter button:hover{transform:none;background:#e8eeea}#route-map .map-filter button.active:hover{background:#32736e}
+.map-explorer{display:grid;grid-template-columns:minmax(0,1fr) 300px;border-top:1px solid #e1e7e1}
+#route-map .live-map-stage{background:#eff2ec;min-width:0}
+#route-map #realTripMap{height:560px;border:0;background:#edf0e9;outline-offset:-4px}
+.map-itinerary-panel{padding:25px 22px 18px;color:var(--map-ink);background:#fbfcf9;display:flex;flex-direction:column;min-width:0;border-left:1px solid #e0e6df}
+.map-panel-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.map-live-dot{font-size:10px;color:#7b9087;white-space:nowrap}.map-live-dot:before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:#6b9d88;margin-right:5px}
+#mapDayTitle{font-size:21px;font-weight:650;line-height:1.5;margin:12px 0 5px;color:#2e4e4b}
+#mapDaySummary{font-size:12px;color:#8b9992;line-height:1.7;margin:0 0 18px}
+#route-map .live-map-stops{display:flex;flex-direction:column;overflow:auto;gap:0;padding:0;background:none;max-height:330px;scrollbar-width:thin}
+#route-map .live-map-stops>button{position:relative;display:flex;align-items:center;flex-shrink:0;gap:13px;background:transparent;border:0;border-radius:10px;color:#596d68;text-align:left;min-height:47px;width:100%;padding:9px 10px;font-size:12px;transition:background .2s,color .2s}
+#route-map .live-map-stops>button:not(:last-child):after{content:'';position:absolute;left:23px;top:34px;height:20px;border-left:1px solid #dce5dd}
+#route-map .live-map-stops>button span{display:grid;place-items:center;width:27px;height:27px;flex:0 0 27px;border-radius:50%;background:#edf2ed;color:#7d958b;font-size:10px;z-index:1}
+#route-map .live-map-stops>button:hover{background:#eef3ed}#route-map .live-map-stops>button.active{background:#e5efea;color:#266a60}#route-map .live-map-stops>button.active span{background:#3d7c71;color:white}
+#route-map .live-map-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:none;padding:18px 0 0;margin-top:auto}
+#route-map .live-map-actions>button,#route-map .live-map-actions>a{background:#f6f8f4;border:1px solid #dce5dd;color:#617e72;border-radius:10px;padding:8px;font-size:11px;min-height:42px}
+#route-map .live-map-actions>a{background:#32736e;color:white;border-color:#32736e}
+.map-order-note{font-size:10px;color:#98a39c;line-height:1.6;margin:11px 0 0}
+#route-map .map-live-status{background:#f4f6f1;color:#8a9a91;border-color:#e1e6de;font-size:11px;padding:10px 22px}
+#route-map .map-accuracy-note{background:#f7f8f5;color:#909e94;border-color:#e2e7df;font-size:10px;padding:12px 22px}#route-map .map-accuracy-note a{color:#68877b}
+#route-map .map-route-details{border-top:1px solid #e1e7df}#route-map .map-route-details>summary{cursor:pointer;padding:17px 24px;color:#638073;font-size:12px}
+#route-map .map-day-cards{background:#eef2ec;border-color:#dfe7de;grid-template-columns:repeat(4,minmax(0,1fr))}
+#route-map .map-day-card{background:#fafbf8;border-color:#d9e2d7;color:#446253}#route-map .map-day-date,#route-map .map-day-route{color:#8b998d}#route-map .map-day-card .map-actions a{background:#f0f4ed;border-color:#d7e0d2;color:#6a8070;font-size:10px}
+#route-map .map-day-title{font-size:12px}.map-focus-card{border-radius:12px;background:#eaf1ea;border:1px solid #d5e3d5;padding:12px;margin:0 0 14px}.map-focus-card[hidden]{display:none}.map-focus-card>span{font-size:9px;color:#8b9f8e;display:block;letter-spacing:1px}.map-focus-card>strong{font-size:14px;display:block;color:#3d6250;margin:4px 0}.map-focus-card>a{font-size:11px;color:#51826b;display:inline-flex;min-height:30px;align-items:center}
+#route-map .live-map-overlay{background:#edf2e9;color:#416951}#route-map .live-map-overlay p{color:#8a9e8c}.map-spinner{border-color:#cbd9c9;border-top-color:#55836d}#route-map .live-map-overlay button{background:#f8faf5;border-color:#c5d6c3;color:#5b7c64}
+.maplibregl-ctrl-group{border-radius:12px!important;box-shadow:0 2px 18px #304b4020!important;overflow:hidden;background:#fffffff2!important}.maplibregl-ctrl-group button{width:38px;height:38px}.maplibregl-ctrl-attrib{background:#ffffffe0!important;color:#8b9994!important;font-size:9px!important}.maplibregl-ctrl-attrib a{color:#7e9187!important}
+@media(max-width:760px){#route-map .real-map-head{padding:22px 18px 15px}#route-map .real-map-head strong{font-size:21px}#route-map .map-filter{margin-top:17px;gap:2px}#route-map .map-filter button{padding:9px 12px;border-radius:10px}#route-map .map-filter button small{font-size:8px}.map-explorer{grid-template-columns:1fr}#route-map #realTripMap{height:460px;height:58svh;min-height:360px;max-height:540px}.map-itinerary-panel{padding:20px 18px;border-left:0;border-top:1px solid #e2e8df}#mapDayTitle{font-size:20px;margin-top:9px}#mapDaySummary{margin-bottom:13px}#route-map .live-map-stops{flex-direction:row;gap:7px;max-height:none;padding:0 0 3px;scrollbar-width:none}#route-map .live-map-stops>button{width:auto;min-height:42px;white-space:nowrap;background:#f0f4ec;border:1px solid #e3e9dd;padding:7px 10px;font-size:11px;gap:7px}#route-map .live-map-stops>button:not(:last-child):after{display:none}#route-map .live-map-stops>button span{width:23px;height:23px;flex-basis:23px}#route-map .live-map-actions{padding-top:14px}#route-map .live-map-actions>a,#route-map .live-map-actions>button{min-height:44px;font-size:12px}#route-map .map-day-cards{grid-template-columns:1fr 1fr}#route-map .map-live-status{padding:10px 18px}.map-focus-card{margin-bottom:12px}.map-eyebrow{font-size:9px;letter-spacing:1.5px}}
+@media(prefers-reduced-motion:reduce){#route-map *{scroll-behavior:auto!important;transition:none!important}.map-spinner{animation:none}}
+/* Familiar map reading: white surfaces, blue selection, clear street hierarchy. */
+#route-map{--map-accent:#1a73e8;--map-ink:#202124;--map-muted:#5f6368}
+#route-map .real-map-shell{background:#fff;border-color:#dadce0;border-radius:20px;box-shadow:0 4px 20px #20212424}
+#route-map .real-map-head{background:#fff;padding:23px 24px 16px;color:#202124}
+#route-map .map-eyebrow{color:#5f6368;letter-spacing:.6px;font-size:11px;font-weight:500}
+#route-map .real-map-head strong{font-size:24px;letter-spacing:0;color:#202124;font-weight:650}
+#route-map .real-map-head p{color:#5f6368;font-size:13px;letter-spacing:0}
+#route-map .map-filter{gap:8px;margin-top:18px}
+#route-map .map-filter button{border:1px solid #dadce0;background:#fff;border-radius:999px;color:#3c4043!important;padding:8px 17px;min-height:42px}
+#route-map .map-filter button small{letter-spacing:0;font-size:11px;opacity:1}
+#route-map .map-filter button:hover{background:#f1f3f4}
+#route-map .map-filter button.active,#route-map .map-filter button.active:hover{background:#e8f0fe;color:#1967d2!important;border-color:#a8c7fa;box-shadow:none}
+#route-map .map-explorer{grid-template-columns:310px minmax(0,1fr);border-color:#dadce0}
+#route-map .live-map-stage{grid-column:2;grid-row:1;background:#f1f3f4}
+#route-map #realTripMap{background:#f1f3f4;height:560px}
+#route-map .map-itinerary-panel{grid-column:1;grid-row:1;background:#fff;border:0;border-right:1px solid #dadce0;padding:23px 20px 16px}
+#route-map .map-live-dot{color:#5f6368}#route-map .map-live-dot:before{background:#1a73e8}
+#route-map #mapDayTitle{color:#202124;font-size:22px}#route-map #mapDaySummary{color:#70757a;font-size:12px}
+#route-map .live-map-stops>button{color:#3c4043;font-size:12px;gap:12px;padding:8px}
+#route-map .live-map-stops>button span{background:#fff;color:#1a73e8;border:1.5px solid #1a73e8;font-weight:650}
+#route-map .live-map-stops>button:not(:last-child):after{left:21px;border-left:2px dotted #a8c7fa}
+#route-map .live-map-stops>button:hover{background:#f1f3f4}
+#route-map .live-map-stops>button.active{background:#e8f0fe;color:#174ea6}
+#route-map .live-map-stops>button.active span{background:#1a73e8;color:#fff;border-color:#1a73e8}
+#route-map .map-focus-card{background:#e8f0fe;border-color:#d2e3fc;border-radius:12px}
+#route-map .map-focus-card>span{color:#5f6368;letter-spacing:.5px}
+#route-map .map-focus-card>strong{color:#202124;font-size:15px}
+#route-map .map-focus-card>a{color:#1967d2;min-height:34px}
+#route-map .live-map-actions>button{background:#fff;border-color:#dadce0;color:#1a73e8;border-radius:999px}
+#route-map .live-map-actions>a{background:#1a73e8;border-color:#1a73e8;color:#fff;border-radius:999px}
+#route-map .live-map-actions>a:hover{background:#1765cc}
+#route-map .map-order-note{color:#70757a;font-size:10px}
+#route-map .map-live-status,#route-map .map-accuracy-note{background:#fff;border-color:#e8eaed;color:#70757a}
+#route-map .map-accuracy-note a{color:#1a73e8}
+#route-map .map-route-details{border-color:#e8eaed}#route-map .map-route-details>summary{color:#3c4043}
+#route-map .map-day-cards{background:#f8f9fa;border-color:#dadce0}
+#route-map .map-day-card{background:#fff;border-color:#dadce0;color:#3c4043}
+#route-map .map-day-card.active{border-color:#1a73e8}
+#route-map .map-day-date,#route-map .map-day-route{color:#70757a}
+#route-map .map-day-card .map-actions a{background:#fff;color:#1a73e8;border-color:#dadce0}
+#route-map .live-map-overlay{background:#f8f9fa;color:#3c4043}#route-map .live-map-overlay p{color:#5f6368}
+#route-map .live-map-overlay button{background:#1a73e8;border-color:#1a73e8;color:#fff;border-radius:999px}
+#route-map .map-spinner{border-color:#d2e3fc;border-top-color:#1a73e8}
+#route-map .maplibregl-ctrl-group{border-radius:8px!important;box-shadow:0 1px 5px #0004!important}
+#route-map .maplibregl-ctrl-group button{width:38px;height:38px}
+#route-map .maplibregl-ctrl-scale{background:#ffffffc9;border-color:#5f6368;border-width:0 2px 2px;color:#3c4043;font-size:10px;line-height:1.5;margin-bottom:10px}
+.map-visual-legend{position:absolute;left:12px;top:12px;z-index:3;padding:7px 10px;display:flex;align-items:center;gap:7px;background:#fffffff2;color:#5f6368;border-radius:6px;box-shadow:0 1px 4px #0002;font-size:10px;pointer-events:none}
+.map-visual-legend:before{content:'';width:19px;border-top:3px dotted #4285f4}
+@media(max-width:760px){#route-map .real-map-head{padding:20px 17px 14px}#route-map .real-map-head strong{font-size:22px}#route-map .map-filter{gap:7px;margin-top:16px}#route-map .map-filter button{padding:8px 13px;min-height:42px}#route-map .map-filter button small{font-size:10px}#route-map .map-explorer{grid-template-columns:1fr}#route-map .live-map-stage{grid-column:1;grid-row:1}#route-map .map-itinerary-panel{grid-column:1;grid-row:2;padding:19px 17px;border-right:0;border-top:1px solid #dadce0}#route-map #realTripMap{height:58svh;min-height:360px;max-height:540px}#route-map .live-map-stops>button{background:#fff;border-color:#dadce0;font-size:11px}#route-map .live-map-actions>button,#route-map .live-map-actions>a{font-size:11px}#route-map .map-visual-legend{font-size:9px;padding:6px 8px;top:10px;left:10px}}
