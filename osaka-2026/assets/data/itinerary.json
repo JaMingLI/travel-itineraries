@@ -1,5 +1,7 @@
 {
   "schema": 1,
+  "extrasTotal": 12056,
+  "knownTotal": 155356,
   "source": "src/days/day-01.html … day-08.html",
   "exchangeRate": "0.22",
   "days": [
@@ -80,6 +82,8 @@
           "budget": 3800
         }
       ],
+      "extras": [],
+      "alternatives": [],
       "routes": [
         {
           "label": "開啟當日 Google Maps 路線 ↗",
@@ -158,19 +162,19 @@
         {
           "start": "16:50",
           "end": "17:30",
-          "title": "地鐵｜北濱站 → 天神橋筋六丁目站 → 春駒",
+          "title": "地鐵｜北濱站 → 天神橋筋六丁目站 → 天満産直市場（2樓）",
           "kind": "交通・地鐵"
         },
         {
           "start": "17:30",
           "end": "18:15",
-          "title": "春駒本店現場候位",
+          "title": "天神橋商店街短逛／18:00到店報到",
           "kind": "候位／銜接"
         },
         {
           "start": "18:15",
           "end": "19:30",
-          "title": "晚餐：春駒本店・握壽司分食",
+          "title": "晚餐：天満産直市場・握壽司與海鮮分食",
           "kind": "用餐／休息"
         },
         {
@@ -200,12 +204,14 @@
         {
           "start": "18:15",
           "end": "19:30",
-          "title": "晚餐：春駒本店・握壽司分食",
+          "title": "晚餐：天満産直市場・握壽司與海鮮分食",
           "kind": "用餐／休息",
-          "label": "晚餐・春駒壽司 本店",
+          "label": "晚餐・海鮮居酒屋 天満産直市場",
           "budget": 6000
         }
       ],
+      "extras": [],
+      "alternatives": [],
       "routes": [
         {
           "label": "開啟今日去程 Google Maps（依上方建議路線核對） ↗",
@@ -226,8 +232,8 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Nakanoshima%20Park%20Osaka"
         },
         {
-          "name": "春駒壽司 本店",
-          "url": "https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E9%A7%92+%E6%9C%AC%E5%BA%97+%E5%A4%A7%E9%98%AA+%E5%A4%A9%E7%A5%9E%E6%A9%8B5-5-2"
+          "name": "海鮮居酒屋 天満産直市場",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E9%AE%AE%E5%B1%85%E9%85%92%E5%B1%8B+%E5%A4%A9%E6%BA%80%E7%94%A3%E7%9B%B4%E5%B8%82%E5%A0%B4+%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A9%E7%A5%9E%E6%A9%8B5-6-7+2F"
         }
       ]
     },
@@ -235,7 +241,7 @@
       "day": 3,
       "date": "11/16（一）",
       "title": "穿著和服，走進京都老街",
-      "summary": "清水東山 → 清水寺 → 二寧坂・八坂塔",
+      "summary": "岡本清水店 → 清水寺 → 老街 → 一寸法師 → 原店還衣",
       "budget": {
         "交通": 3800,
         "餐飲": 10200,
@@ -244,34 +250,40 @@
       },
       "steps": [
         {
-          "start": "06:00",
-          "end": "06:40",
+          "start": "05:15",
+          "end": "05:55",
           "title": "起床、飲水與出門準備（需要時補輕食）",
           "kind": "用餐／休息"
         },
         {
-          "start": "06:40",
-          "end": "06:45",
+          "start": "05:55",
+          "end": "06:00",
           "title": "出門前最後確認",
           "kind": "固定銜接"
         },
         {
-          "start": "06:45",
-          "end": "09:45",
+          "start": "06:00",
+          "end": "09:15",
           "title": "地鐵＋阪急｜花園町站 → 西梅田站／大阪梅田站 → 京都河原町站",
           "kind": "交通・地鐵＋私鐵"
         },
         {
-          "start": "09:45",
-          "end": "10:00",
-          "title": "09:45到店附近，等待10:00建議預約",
+          "start": "09:15",
+          "end": "09:30",
+          "title": "09:15到店報到，等待09:30已完成預約",
           "kind": "固定銜接"
         },
         {
-          "start": "10:00",
-          "end": "11:30",
-          "title": "岡本著裝與髮型",
+          "start": "09:30",
+          "end": "11:00",
+          "title": "岡本清水店著裝、DECO與髮型",
           "kind": "準備／手續"
+        },
+        {
+          "start": "11:00",
+          "end": "11:30",
+          "title": "清水坂周邊和服合照與短逛",
+          "kind": "遊覽／購物"
         },
         {
           "start": "11:30",
@@ -317,43 +329,49 @@
         },
         {
           "start": "16:05",
-          "end": "16:25",
-          "title": "步行｜八坂塔周邊 → 岡本清水東山店",
+          "end": "16:20",
+          "title": "點心後繼續逛：二寧坂／八坂塔周邊",
+          "kind": "遊覽／購物"
+        },
+        {
+          "start": "16:20",
+          "end": "16:30",
+          "title": "步行｜老街周邊 → 一寸法師",
           "kind": "交通・步行"
         },
         {
-          "start": "16:25",
-          "end": "16:55",
-          "title": "還衣、換回便服、取物",
-          "kind": "準備／手續"
-        },
-        {
-          "start": "16:55",
-          "end": "17:40",
-          "title": "步行｜還衣後 → 寺町佛光寺・麵屋豬一本店",
-          "kind": "交通・步行"
-        },
-        {
-          "start": "17:40",
-          "end": "18:40",
-          "title": "豬一本店・領整理券與現場候位",
-          "kind": "候位／銜接"
-        },
-        {
-          "start": "18:40",
-          "end": "19:25",
-          "title": "晚餐：麵屋豬一・京都出汁拉麵",
+          "start": "16:30",
+          "end": "17:10",
+          "title": "晚餐：一寸法師拉麵（售完改 Maruto 備案）",
           "kind": "用餐／休息"
         },
         {
-          "start": "19:25",
-          "end": "19:45",
-          "title": "步行｜麵屋豬一 → 阪急京都線京都河原町站",
+          "start": "17:10",
+          "end": "17:20",
+          "title": "步行｜一寸法師 → 岡本清水店",
           "kind": "交通・步行"
         },
         {
-          "start": "19:45",
-          "end": "22:15",
+          "start": "17:20",
+          "end": "17:50",
+          "title": "還衣、換回便服、取物（17:50前完成）",
+          "kind": "準備／手續"
+        },
+        {
+          "start": "17:50",
+          "end": "18:00",
+          "title": "核對隨身物品與回程準備",
+          "kind": "固定銜接"
+        },
+        {
+          "start": "18:00",
+          "end": "18:45",
+          "title": "步行｜岡本清水店 → 阪急京都河原町站",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "18:45",
+          "end": "21:15",
           "title": "阪急＋地鐵｜京都河原町站 → 大阪梅田站／西梅田站 → 花園町站",
           "kind": "交通・地鐵＋私鐵"
         }
@@ -376,12 +394,63 @@
           "budget": 1700
         },
         {
-          "start": "18:40",
-          "end": "19:25",
-          "title": "晚餐：麵屋豬一・京都出汁拉麵",
+          "start": "16:30",
+          "end": "17:10",
+          "title": "晚餐：一寸法師拉麵（售完改 Maruto 備案）",
           "kind": "用餐／休息",
-          "label": "晚餐・麵屋豬一 本店（麺屋 猪一）",
+          "label": "晚餐・Japanese Noodle 一寸法師（售完：Maruto）",
           "budget": 6000
+        }
+      ],
+      "extras": [
+        {
+          "label": "和服租借",
+          "amount": 12056,
+          "bookingTime": "09:30",
+          "status": "confirmed"
+        }
+      ],
+      "alternatives": [
+        {
+          "id": "day3-maruto",
+          "steps": [
+            {
+              "start": "16:30",
+              "end": "16:45",
+              "baseMinutes": 10,
+              "title": "一寸法師售完／候位過久 → 上坡步行回清水店"
+            },
+            {
+              "start": "16:45",
+              "end": "17:15",
+              "baseMinutes": 25,
+              "title": "先還和服、換便服與取物"
+            },
+            {
+              "start": "17:15",
+              "end": "17:25",
+              "baseMinutes": 5,
+              "title": "步行至Maruto（栄山堂2樓）"
+            },
+            {
+              "start": "17:25",
+              "end": "18:10",
+              "baseMinutes": 35,
+              "title": "Maruto 晚餐（含候位機動）"
+            },
+            {
+              "start": "18:10",
+              "end": "18:45",
+              "baseMinutes": 25,
+              "title": "步行至阪急京都河原町站"
+            },
+            {
+              "start": "18:45",
+              "end": "21:15",
+              "baseMinutes": 110,
+              "title": "阪急至大阪梅田 → 四橋線回花園町"
+            }
+          ]
         }
       ],
       "routes": [
@@ -404,8 +473,8 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Kyoto-kawaramachi%20Station"
         },
         {
-          "name": "岡本和服 清水東山店",
-          "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E7%9D%80%E7%89%A9%E5%B2%A1%E6%9C%AC+%E6%B8%85%E6%B0%B4%E6%9D%B1%E5%B1%B1%E5%BA%97+%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E8%BE%B0%E5%B7%B3%E7%94%BA110-9"
+          "name": "岡本和服 清水店",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E7%9D%80%E7%89%A9%E5%B2%A1%E6%9C%AC+%E6%B8%85%E6%B0%B4%E5%BA%97+%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%B8%85%E6%B0%B42%E4%B8%81%E7%9B%AE237-1-1"
         },
         {
           "name": "清水寺",
@@ -420,12 +489,16 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Yasaka%20Pagoda%20Kyoto"
         },
         {
-          "name": "麵屋豬一 本店（麺屋 猪一）",
-          "url": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B1%8B+%E7%8C%AA%E4%B8%80+%E6%9C%AC%E5%BA%97+%E4%BA%AC%E9%83%BD+%E6%81%B5%E6%AF%94%E9%A0%88%E4%B9%8B%E7%94%BA542"
+          "name": "Japanese Noodle 一寸法師",
+          "url": "https://www.google.com/maps/search/?api=1&query=Japanese+Noodle+%E4%B8%80%E5%AF%B8%E6%B3%95%E5%B8%AB+%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%B8%85%E6%B0%B44-148-6"
         },
         {
           "name": "阪急大阪梅田駅",
           "url": "https://www.google.com/maps/search/?api=1&query=%E9%98%AA%E6%80%A5%E5%A4%A7%E9%98%AA%E6%A2%85%E7%94%B0%E9%A7%85"
+        },
+        {
+          "name": "麺処まると／Noodle shop Maruto（售完備案）",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%87%A6%E3%81%BE%E3%82%8B%E3%81%A8+%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%B8%85%E6%B0%B42-226+%E6%A0%84%E5%B1%B1%E5%A0%822%E9%9A%8E"
         }
       ]
     },
@@ -572,6 +645,8 @@
           "budget": 4000
         }
       ],
+      "extras": [],
+      "alternatives": [],
       "routes": [
         {
           "label": "開啟今日去程 Google Maps（依上方建議路線核對） ↗",
@@ -613,7 +688,7 @@
       "day": 5,
       "date": "11/18（三）",
       "title": "海遊館，接一場爐端燒晚餐",
-      "summary": "天保山 → 海遊館 → 梅田爐端燒",
+      "summary": "天保山 → 海遊館 → 堺筋本町爐端燒",
       "budget": {
         "交通": 2000,
         "餐飲": 13700,
@@ -672,7 +747,7 @@
         {
           "start": "16:30",
           "end": "18:00",
-          "title": "地鐵｜大阪港站 → 谷町四丁目站轉乘 → 東梅田站 → Tottotto",
+          "title": "地鐵｜大阪港站 → 中央線直達堺筋本町站 → 炭や わだち 別邸",
           "kind": "交通・地鐵"
         },
         {
@@ -684,13 +759,13 @@
         {
           "start": "18:30",
           "end": "20:30",
-          "title": "晚餐：Tottotto お初天神店・炭火爐端燒",
+          "title": "晚餐：炭や わだち 別邸・原始燒與炭火爐端燒",
           "kind": "用餐／休息"
         },
         {
           "start": "20:30",
           "end": "21:25",
-          "title": "地鐵｜梅田站 → 大國町站轉乘 → 花園町站 → 住宿",
+          "title": "地鐵｜堺筋本町站 → 堺筋線直達天下茶屋站 → 步行回住宿",
           "kind": "交通・地鐵"
         }
       ],
@@ -714,20 +789,22 @@
         {
           "start": "18:30",
           "end": "20:30",
-          "title": "晚餐：Tottotto お初天神店・炭火爐端燒",
+          "title": "晚餐：炭や わだち 別邸・原始燒與炭火爐端燒",
           "kind": "用餐／休息",
-          "label": "晚餐・とっとっと Tottotto 梅田お初天神店",
+          "label": "晚餐・おおさか炉端 炭や わだち 別邸",
           "budget": 10000
         }
       ],
+      "extras": [],
+      "alternatives": [],
       "routes": [
         {
           "label": "去程｜花園町→大阪港（地鐵即時比較） ↗",
           "url": "https://www.google.com/maps/dir/?api=1&origin=%E8%8A%B1%E5%9C%92%E7%94%BA%E9%A7%85&destination=%E5%A4%A7%E9%98%AA%E6%B8%AF%E9%A7%85&travelmode=transit"
         },
         {
-          "label": "晚餐段｜海遊館→Tottotto（東梅田下車） ↗",
-          "url": "https://www.google.com/maps/dir/%E6%B5%B7%E9%81%8A%E9%A4%A8+%E6%97%A5%E6%9C%AC%E3%80%92552-0022+Osaka,+Minato+Ward,+Kaigandori,+1+Chome%E2%88%921%E2%88%9210/%E7%88%90%E7%AB%AF%E3%80%81%E5%85%A7%E8%87%9F%E3%80%81%E7%83%A4%E4%B8%B2%E5%92%8C%E9%97%9C%E6%9D%B1%E7%85%AE+Tottotto+%E6%A2%85%E7%94%B0%E5%88%9D%E5%A4%A9%E7%A5%9E%E5%BA%97+%E6%97%A5%E6%9C%AC%E3%80%92530-0057+Osaka,+Kita+Ward,+Sonezaki,+2+Chome%E2%88%9213%E2%88%9217+Watanabe+Bld.,+2F/@34.6784079,135.3914677,12z/am=t/data=!3m1!5s0x6000e69236c52ebb:0x39814e65bdb55ab7!4m18!4m17!1m5!1m1!1s0x6000e8f48c0da9cd:0x6f83c520ae082ccc!2m2!1d135.4289645!2d34.6545182!1m5!1m1!1s0x6000e7a3dba068b1:0x8430264d190ac361!2m2!1d135.5002629!2d34.7012873!2m3!6e0!7e2!8j1795019400!3e3?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+          "label": "晚餐段｜海遊館→炭や わだち 別邸（堺筋本町下車） ↗",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E5%A0%BA%E7%AD%8B%E6%9C%AC%E7%94%BA%E9%A7%85"
         }
       ],
       "places": [
@@ -740,12 +817,12 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Osaka%20Aquarium%20Kaiyukan"
         },
         {
-          "name": "東梅田",
-          "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%A2%85%E7%94%B0%E9%A7%85"
+          "name": "堺筋本町",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E5%A0%BA%E7%AD%8B%E6%9C%AC%E7%94%BA%E9%A7%85"
         },
         {
-          "name": "とっとっと Tottotto 梅田お初天神店",
-          "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%81%A3%E3%81%A8%E3%81%A3%E3%81%A8+%E6%A2%85%E7%94%B0%E3%81%8A%E5%88%9D%E5%A4%A9%E7%A5%9E%E5%BA%97+%E6%9B%BD%E6%A0%B9%E5%B4%8E2-13-17"
+          "name": "おおさか炉端 炭や わだち 別邸",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%8A%E3%81%95%E3%81%8B%E7%82%89%E7%AB%AF+%E7%82%AD%E3%82%84+%E3%82%8F%E3%81%A0%E3%81%A1+%E5%88%A5%E9%82%B8+%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9C%AC%E7%94%BA%E6%A9%8B7-18+%E5%90%8D%E9%98%AA%E7%AC%AC2%E3%83%93%E3%83%AB2F"
         },
         {
           "name": "谷町四丁目駅",
@@ -888,6 +965,8 @@
           "budget": 16000
         }
       ],
+      "extras": [],
+      "alternatives": [],
       "routes": [
         {
           "label": "晚餐後｜一笑→住宿（梅田／大國町／花園町） ↗",
@@ -1032,6 +1111,8 @@
           "budget": 14000
         }
       ],
+      "extras": [],
+      "alternatives": [],
       "routes": [
         {
           "label": "心齋橋 → 玄品・晚餐步行導航 ↗",
@@ -1182,6 +1263,8 @@
           "budget": 5000
         }
       ],
+      "extras": [],
+      "alternatives": [],
       "routes": [
         {
           "label": "開啟當日 Google Maps 路線 ↗",

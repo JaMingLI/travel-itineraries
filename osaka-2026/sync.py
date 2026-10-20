@@ -59,11 +59,14 @@ def extract_facts(document):
         days.append({'day': number, 'date': text(day.select_one('.case-day > span:last-child')),
                      'title': text(day.select_one('.disclosure-title')), 'summary': text(day.select_one('.case-itinerary')),
                      'budget': budget, 'steps': steps, 'meals': meals,
+                     'extras': [{'label': n['data-extra-label'], 'amount': int(n['data-extra-jpy']), 'bookingTime': n.get('data-booking-time'), 'status': n.get('data-booking-status')} for n in day.select('[data-extra-jpy]')],
+                     'alternatives': [{'id': plan['data-alternative-plan'], 'steps': [{'start': n['data-start'], 'end': n['data-end'], 'baseMinutes': int(n['data-base']), 'title': text(n).split('｜',1)[-1]} for n in plan.select('.alternative-item')]} for plan in day.select('[data-alternative-plan]')],
                      'routes': [{'label': text(a), 'url': a['href']} for a in day.select('.case-route')],
                      'places': [{'name': text(a).removeprefix('📍 ').removeprefix('🎂 ').removesuffix(' ↗'), 'url': a['href']} for a in day.select('.case-places a')]})
     if len(days) != 8:
         raise ValueError('Exactly eight daily cards required')
-    return {'schema': 1, 'source': 'src/days/day-01.html … day-08.html', 'exchangeRate': str(FX), 'days': days,
+    extras_total = sum(e['amount'] for d in days for e in d['extras'])
+    return {'schema': 1, 'extrasTotal': extras_total, 'knownTotal': sum(d['budget']['total'] for d in days) + extras_total, 'source': 'src/days/day-01.html … day-08.html', 'exchangeRate': str(FX), 'days': days,
             'totals': {key: sum(d['budget'][key] for d in days) for key in ('交通', '餐飲', '門票', 'total')}}
 
 
@@ -99,8 +102,10 @@ def synchronize(document, map_data, checklist):
             if place_key(point['url']) in canonical:
                 point.update(canonical[place_key(point['url'])])
         budget_row = soup.select('#cost-overview tbody tr')[number - 1]
-        for label, field in [('交通', '交通'), ('食物', '餐飲'), ('門票', '門票'), ('當日總計', 'total')]:
+        for label, field in [('交通', '交通'), ('食物', '餐飲'), ('門票', '門票'), ('三類小計', 'total')]:
             fill(budget_row.select_one(f'[data-label="{label}"] .phone-cell-value'), currency(day['budget'][field]))
+        extra_summary = soup.select_one(f'#day-card-{key} [data-sync-day-known-cost]')
+        # Daily fragments remain canonical; cost note is already rendered there.
         food_row = soup.select('#view-budget table')[1].select('tbody tr')[number - 1]
         fill(food_row.select_one('[data-label="全天雙人"] .phone-cell-value'), currency(day['budget']['餐飲']))
         for label, prefix in [('午餐','午餐'), ('點心與飲料','點心'), ('晚餐','晚餐')]:
@@ -142,20 +147,22 @@ def synchronize(document, map_data, checklist):
             node.replace_with(value)
     # Defaults migrate only fields still matching old defaults, preserving custom edits/checks.
     updates = {
-        'booking-3': {'note': '寺町佛光寺本店；17:40到店候位，18:40–19:25用餐，19:45啟程回大阪。核對當日臨休、最後收客與排隊規則；候位不代表保證入座。'},
+        'booking-2': {'title': '11/15 天満産直市場：確認18:15雙人訂位', 'note': '天神橋5-6-7的2樓；17:30到附近、18:00報到、18:15–19:30晚餐，尚未訂位。雙人含飲料及お通し上限¥6,000；官網お通し列每人¥333。官網週日22:30關門、Google顯示22:00，預約時核對11/15營業、最晚點餐、費用及取消規則。'},
+        'booking-3': {'title': '11/16 一寸法師與Maruto：確認售完及備案動線', 'note': '16:30一寸法師；若售完或無法17:10前吃完，16:30–16:45步行回已預約的岡本清水店，16:45–17:15先還衣，再17:15–17:25到Maruto（距清水店約44公尺，2樓），17:25–18:10用餐。兩家擇一共用雙人¥6,000；岡本17:50還衣是硬期限。'},
         'booking-6': {'note': '17:00–18:00在SAIDO彩道吃晚餐，18:00離園銜接19:25–19:45 Alcyon蛋糕取貨；確認當日營業、最後點餐及優先入座規則。尚未訂位，園內餐廳可能提早關門。'},
-        'booking-10': {'title': '11/18 Tottotto：確認18:30雙人訂位與店址', 'note': '時間軸18:00到店附近、18:15報到、18:30–20:30晚餐；建議訂位18:30，尚未訂位。2人單點上限¥10,000；確認お初天神店、席費及取消規則。'},
+        'booking-10': {'title': '11/18 炭や わだち 別邸：確認18:30雙人訂位與店址', 'note': '時間軸18:00到店附近、18:15報到、18:30–20:30晚餐；建議訂位18:30，尚未訂位。2人單點上限¥10,000；確認本町橋7-18的別邸、週三營業、席費及取消規則。'},
     }
+    updates['booking-1'] = {'title': '11/16 岡本清水店09:30已預約：核對付款與取消規則', 'note': '依預約完成截圖：2人，情侶套餐（豪華×男性），DECO任選1人、自由選擇髮型1人，當天原店歸還。未稅¥10,960＋稅¥1,096＝含稅¥12,056；付款狀態待確認。06:00離開住宿、09:15報到；地址清水2丁目237-1-1，17:50前還衣。前一晚核對班次、取消期限與聯絡方式；顧客編號及個人聯絡資料查私人訂單。', 'due': '已預約／出發前複核'}
     dinner5 = next(m for m in facts['days'][4]['meals'] if m['label'].startswith('晚餐'))
-    updates['booking-10']['title'] = f"11/18 Tottotto：確認{dinner5['start']}雙人訂位與店址"
-    updates['booking-10']['note'] = f"時間軸18:00到店附近、18:15報到、{dinner5['start']}–{dinner5['end']}晚餐；建議訂位{dinner5['start']}，尚未訂位。2人單點上限¥{dinner5['budget']:,}；確認お初天神店、席費及取消規則。"
+    updates['booking-10']['title'] = f"11/18 炭や わだち 別邸：確認{dinner5['start']}雙人訂位與店址"
+    updates['booking-10']['note'] = f"時間軸18:00到店附近、18:15報到、{dinner5['start']}–{dinner5['end']}晚餐；建議訂位{dinner5['start']}，尚未訂位。2人單點上限¥{dinner5['budget']:,}；確認本町橋7-18的別邸、週三營業、席費及取消規則。"
     previous = {}
     for task in checklist['tasks']:
         if task['id'] in updates:
             previous[task['id']] = {field: task[field] for field in updates[task['id']]}
             task.update(updates[task['id']])
     checklist['previousDefaults'] = previous
-    checklist['revision'] = '2026-10-19-itinerary-sync'
+    checklist['revision'] = '2026-10-19-confirmed-kiyomizu-kimono'
     # Keep aggregate prose, hero links and food envelope in sync as daily amounts change.
     replacements = {}
     for old, field in zip(old_totals, ('交通','餐飲','門票','total')):
@@ -168,6 +175,22 @@ def synchronize(document, map_data, checklist):
             if node.parent.name not in ('script', 'style'):
                 value = pattern.sub(lambda m: replacements[m[0]], str(node))
                 if value != str(node): node.replace_with(value)
+    extra_total = facts['extrasTotal']
+    known_total = facts['knownTotal']
+    if extra_total:
+        shortcut = soup.select_one('.overview-action[data-view-target="budget"]')
+        shortcut.select_one('strong').string = f'¥{known_total:,}'
+        shortcut.select_one('small').string = '交通・餐飲・門票・已預約和服 →'
+        kpi = soup.select('#cost-overview .cost-kpi')[-1]
+        kpi.select_one('.cost-label').string = '已知費用合計（含和服）'
+        fill(kpi.select_one('.cost-main'), currency(known_total))
+        kpi.select_one('.cost-sub').string = f'三類¥{totals["total"]:,}＋和服¥{extra_total:,}；機票、住宿、購物等另計'
+        for row in soup.select('#view-budget table')[2].select('tbody tr'):
+            if '和服租借' in text(row.select_one('[data-label="項目"]')):
+                fill(row.select_one('[data-label="目前資料"] .phone-cell-value'), f'已預約雙人 {currency(extra_total)}')
+                row.select_one('[data-label="計算方式"] .phone-cell-value').string = '清水店11/16 09:30；含DECO與髮型加購，付款狀態待確認'
+        for n in soup.select('[data-sync-known-trip-cost]'):
+            fill(n, f'交通／餐飲／門票三類小計 {currency(totals["total"])}；另加已預約和服 {currency(extra_total)}。已知項目合計 <strong>{currency(known_total)}</strong>，機票、住宿、購物、上網、保險等尚未包含。和服預約完成不代表已付款，避免再次加計同一筆租借費。')
     # Replace only edited panels in the original document to preserve daily fragments verbatim.
     for key, old in original_panels.items():
         original = BeautifulSoup(document, 'html.parser').select_one('#view-' + key)
