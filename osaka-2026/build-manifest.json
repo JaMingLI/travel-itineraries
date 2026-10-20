@@ -1,7 +1,7 @@
 [
   {
     "path": "index.html",
-    "sha256": "c54748a5b63b1bc082ab43f22a08f30155e3cc036c89b8e899ae30f7b831a32c"
+    "sha256": "75a7fe4d9ae85e85729646b91759d19a98a83de87fd6913f4d0f4a1830f37a2c"
   },
   {
     "path": "assets/css/base.css",
@@ -65,7 +65,7 @@
   },
   {
     "path": "assets/js/map.js",
-    "sha256": "be94b166aa494d9b4f265467b14d9bd0a339f029ed0141ddd733754b5a162721"
+    "sha256": "bd89ccda5ac4d2521ff0671123b89d83d09a7602178510016d2eb81a58641875"
   },
   {
     "path": "assets/js/router.js",
@@ -81,6 +81,6 @@
   },
   {
     "path": "assets/data/itinerary.json",
-    "sha256": "e5dfea26e2d3d2f6a8e29097781f801a5b8f6a748f576ba87c616544e8ea9f2e"
+    "sha256": "eef31419d4c686f6668253e4f895562b66bbbc31747d4c4553e1c4d28e00468e"
   }
 ]

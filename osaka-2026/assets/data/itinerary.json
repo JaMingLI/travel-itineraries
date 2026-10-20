@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "extrasTotal": 12056,
-  "knownTotal": 155356,
+  "extrasTotal": 0,
+  "knownTotal": 143300,
   "source": "src/days/day-01.html … day-08.html",
   "exchangeRate": "0.22",
   "days": [
@@ -241,7 +241,7 @@
       "day": 3,
       "date": "11/16（一）",
       "title": "穿著和服，走進京都老街",
-      "summary": "岡本清水店 → 清水寺 → 老街 → 一寸法師 → 原店還衣",
+      "summary": "璃光清水本店 → 清水寺 → 老街 → 先還衣 → 一寸法師（售完Maruto）",
       "budget": {
         "交通": 3800,
         "餐飲": 10200,
@@ -276,13 +276,13 @@
         {
           "start": "09:30",
           "end": "11:00",
-          "title": "岡本清水店著裝、DECO與髮型",
+          "title": "璃光清水本店選衣、著裝與髮型（項目待確認）",
           "kind": "準備／手續"
         },
         {
           "start": "11:00",
           "end": "11:30",
-          "title": "清水坂周邊和服合照與短逛",
+          "title": "二年坂周邊和服合照與短逛",
           "kind": "遊覽／購物"
         },
         {
@@ -317,26 +317,32 @@
         },
         {
           "start": "14:50",
-          "end": "15:35",
+          "end": "15:15",
           "title": "產寧坂、二寧坂、八坂塔外觀",
           "kind": "遊覽／購物"
         },
         {
-          "start": "15:35",
-          "end": "16:05",
+          "start": "15:15",
+          "end": "15:40",
           "title": "沿途點心：抹茶甜點／糰子",
           "kind": "點心／休息"
         },
         {
-          "start": "16:05",
+          "start": "15:40",
+          "end": "15:50",
+          "title": "步行｜二年坂周邊 → 璃光清水本店",
+          "kind": "交通・步行"
+        },
+        {
+          "start": "15:50",
           "end": "16:20",
-          "title": "點心後繼續逛：二寧坂／八坂塔周邊",
-          "kind": "遊覽／購物"
+          "title": "先還和服、換回便服與取物",
+          "kind": "準備／手續"
         },
         {
           "start": "16:20",
           "end": "16:30",
-          "title": "步行｜老街周邊 → 一寸法師",
+          "title": "步行｜璃光清水本店 → 一寸法師",
           "kind": "交通・步行"
         },
         {
@@ -348,30 +354,18 @@
         {
           "start": "17:10",
           "end": "17:20",
-          "title": "步行｜一寸法師 → 岡本清水店",
-          "kind": "交通・步行"
-        },
-        {
-          "start": "17:20",
-          "end": "17:50",
-          "title": "還衣、換回便服、取物（17:50前完成）",
-          "kind": "準備／手續"
-        },
-        {
-          "start": "17:50",
-          "end": "18:00",
-          "title": "核對隨身物品與回程準備",
+          "title": "餐後休息與回程準備",
           "kind": "固定銜接"
         },
         {
-          "start": "18:00",
-          "end": "18:45",
-          "title": "步行｜岡本清水店 → 阪急京都河原町站",
+          "start": "17:20",
+          "end": "18:05",
+          "title": "步行｜一寸法師 → 阪急京都河原町站",
           "kind": "交通・步行"
         },
         {
-          "start": "18:45",
-          "end": "21:15",
+          "start": "18:05",
+          "end": "20:35",
           "title": "阪急＋地鐵｜京都河原町站 → 大阪梅田站／西梅田站 → 花園町站",
           "kind": "交通・地鐵＋私鐵"
         }
@@ -386,8 +380,8 @@
           "budget": 2500
         },
         {
-          "start": "15:35",
-          "end": "16:05",
+          "start": "15:15",
+          "end": "15:40",
           "title": "沿途點心：抹茶甜點／糰子",
           "kind": "點心／休息",
           "label": "點心・咖啡／輕食",
@@ -402,14 +396,7 @@
           "budget": 6000
         }
       ],
-      "extras": [
-        {
-          "label": "和服租借",
-          "amount": 12056,
-          "bookingTime": "09:30",
-          "status": "confirmed"
-        }
-      ],
+      "extras": [],
       "alternatives": [
         {
           "id": "day3-maruto",
@@ -418,37 +405,25 @@
               "start": "16:30",
               "end": "16:45",
               "baseMinutes": 10,
-              "title": "一寸法師售完／候位過久 → 上坡步行回清水店"
+              "title": "一寸法師 → Maruto（栄山堂2樓）"
             },
             {
               "start": "16:45",
-              "end": "17:15",
-              "baseMinutes": 25,
-              "title": "先還和服、換便服與取物"
-            },
-            {
-              "start": "17:15",
-              "end": "17:25",
-              "baseMinutes": 5,
-              "title": "步行至Maruto（栄山堂2樓）"
-            },
-            {
-              "start": "17:25",
-              "end": "18:10",
+              "end": "17:30",
               "baseMinutes": 35,
-              "title": "Maruto 晚餐（含候位機動）"
+              "title": "Maruto晚餐，含候位機動"
             },
             {
-              "start": "18:10",
-              "end": "18:45",
+              "start": "17:30",
+              "end": "18:05",
               "baseMinutes": 25,
               "title": "步行至阪急京都河原町站"
             },
             {
-              "start": "18:45",
-              "end": "21:15",
+              "start": "18:05",
+              "end": "20:35",
               "baseMinutes": 110,
-              "title": "阪急至大阪梅田 → 四橋線回花園町"
+              "title": "阪急大阪梅田 → 四橋線花園町 → 住宿"
             }
           ]
         }
@@ -473,8 +448,8 @@
           "url": "https://www.google.com/maps/search/?api=1&query=Kyoto-kawaramachi%20Station"
         },
         {
-          "name": "岡本和服 清水店",
-          "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E7%9D%80%E7%89%A9%E5%B2%A1%E6%9C%AC+%E6%B8%85%E6%B0%B4%E5%BA%97+%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%B8%85%E6%B0%B42%E4%B8%81%E7%9B%AE237-1-1"
+          "name": "璃光和服 清水本店",
+          "url": "https://www.google.com/maps/search/?api=1&query=%E7%92%83%E5%85%89%E5%92%8C%E6%9C%8D+Riko+Kimono+%E6%B8%85%E6%B0%B4%E6%9C%AC%E5%BA%97+%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%A1%9D%E5%B1%8B%E7%94%BA351-16"
         },
         {
           "name": "清水寺",
